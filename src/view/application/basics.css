@@ -23,15 +23,15 @@ body {
 
   .image {
     &#bgPNG {
-      background-image: url('images/image.png');
+      background-image: url('../../images/image.png');
     }
 
     &#bgJPG {
-      background-image: url('images/image.jpg');
+      background-image: url('../../images/image.jpg');
     }
 
     &#bgSVG {
-      background-image: url('images/image.svg');
+      background-image: url('../../images/image.svg');
     }
   }
 }

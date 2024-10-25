@@ -8,8 +8,9 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    page: './src/page.jsx'
+    style_bundle: './src/view/style_bundle.js',
+    index: './src/view/index/index.js',
+    page: './src/view/page/page.jsx'
   },
   output: {
     filename: '[name].js',
@@ -79,24 +80,24 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/index.html',
+      template: './src/view/index/index.html',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['style_bundle', 'index']
     }),
 
     // Internal pages
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
+      template: './src/view/page/page.html',
+      filename: './page.html',
+      chunks: ['style_bundle', 'page']
     }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/analytics.html'),
+        path: path.join(__dirname, './src/view/application/_analytics.html'),
         location: 'analytics',
         template_filename: '*',
         priority: 'replace'

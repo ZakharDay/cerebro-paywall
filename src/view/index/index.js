@@ -1,5 +1,4 @@
-import './index.css'
-import jpg from './images/image.jpg'
+import jpg from '../../images/image.jpg'
 
 document.addEventListener('DOMContentLoaded', () => {
   const image = new Image()
