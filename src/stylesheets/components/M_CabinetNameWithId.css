@@ -1,0 +1,20 @@
+.M_CabinetNameWithId {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--M_CabinetNameWithId-gap, 6px);
+
+  /* ui-accent-text-medium */
+  font-family: 'PT Root UI';
+  font-size: var(--ui-accent-text-medium-font-size, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--ui-accent-text-medium-line-height, 20px); /* 125% */
+
+  span {
+    color: var(--text-primary, #000);
+  }
+
+  a {
+    color: var(--interactive-initial, #629e8e);
+  }
+}

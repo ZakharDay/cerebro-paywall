@@ -1,0 +1,11 @@
+.M_TabBar {
+  display: inline-flex;
+  padding: var(--M_TabBar-padding, 4px);
+  align-items: center;
+
+  border-radius: var(--M_TabBar-border-radius, 8px);
+  border: 1px solid var(--form-input-border, #c8cccb);
+  background: var(--form-input-background, #f2f5f4);
+
+  box-shadow: 0px 4px 4px 0px var(--shadow-default, rgba(0, 0, 0, 0.05));
+}

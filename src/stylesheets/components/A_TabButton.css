@@ -1,0 +1,31 @@
+.A_TabButton {
+  cursor: pointer;
+
+  display: inline-block;
+  /* display: inline-flex; */
+  /* align-items: center; */
+
+  padding: var(--A_TabButton-padding-vertical, 12px)
+    var(--A_TabButton-padding-horizontal, 20px);
+
+  border-radius: var(--A_TabButton-border-radius, 4px);
+  background: var(--tab-bar-inactive-background, #f1f1f1);
+
+  color: var(--text-secondary, #363636);
+
+  /* ui-tab-button-text */
+  font-family: 'PT Root UI';
+  font-size: var(--ui-tab-button-text-font-size, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--ui-tab-button-text-line-height, 24px); /* 133.333% */
+
+  &:hover {
+    background: var(--tab-bar-hover-background, #e4e7e6);
+  }
+
+  &.active {
+    background: var(--tab-bar-active-background, #fff);
+    box-shadow: 0px 4px 4px 0px var(--shadow-default, rgba(0, 0, 0, 0.05));
+  }
+}

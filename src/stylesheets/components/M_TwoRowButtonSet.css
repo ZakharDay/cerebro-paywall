@@ -1,0 +1,8 @@
+.M_TwoRowButtonSet {
+  display: flex;
+  padding: var(--S_PayWallWithPromo-footer-padding-vertical, 12px) 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--M_TwoRowButtonSet-gap, 16px);
+  align-self: stretch;
+}

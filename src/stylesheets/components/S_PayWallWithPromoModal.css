@@ -1,0 +1,22 @@
+.S_PayWallWithPromoModal {
+  position: relative;
+
+  display: flex;
+  /* width: 1280px; */
+  /* height: 733px; */
+  padding: var(--S_PayWallWithPromo-padding-vertical, 36px) 0px;
+  justify-content: center;
+  align-items: flex-start;
+
+  border-radius: 16px;
+  background: var(--card-bg-default, #fff);
+
+  /* shadow-modal */
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+
+  .A_IconButton.close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+}

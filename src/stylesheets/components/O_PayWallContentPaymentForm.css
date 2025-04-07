@@ -1,0 +1,40 @@
+.O_PayWallContentPaymentForm {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: stretch; */
+  align-items: center;
+
+  width: 100%;
+  /* width: 680px; */
+  /* height: 500px; */
+
+  padding: var(--O_PayWallContentPaymentForm-padding-top, 12px)
+    var(--S_PayWallWithPromo-padding-horizontal, 48px)
+    var(--O_PayWallContentPaymentForm-padding-bottom, 36px)
+    var(--S_PayWallWithPromo-padding-horizontal, 48px);
+
+  gap: var(--S_PayWallWithPromo-gap, 48px);
+
+  .M_TabBar {
+  }
+
+  .C_Entities {
+    width: 100%;
+
+    .O_EntityBar:not(:first-child) {
+      margin-top: var(--S_PayWallWithPromo-footer-padding-vertical, 12px);
+    }
+  }
+
+  .C_FormFields {
+    display: flex;
+
+    /* TODO */
+    width: 468px;
+    /* END */
+
+    flex-direction: column;
+    align-items: center;
+    gap: var(--C_FormFields-gap, 28px);
+  }
+}

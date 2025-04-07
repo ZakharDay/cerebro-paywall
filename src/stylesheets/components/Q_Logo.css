@@ -1,0 +1,7 @@
+.Q_Logo {
+  width: var(--Q_Logo-width, 100px);
+  height: var(--Q_Logo-height, 40px);
+  /* background-image: url('../../images/cerebro_wallet_logo.svg'); */
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -9,8 +9,7 @@ const path = require('path')
 module.exports = {
   entry: {
     style_bundle: './src/view/style_bundle.js',
-    index: './src/view/index/index.js',
-    page: './src/view/page/page.jsx'
+    index: './src/view/index/index.js'
   },
   output: {
     filename: '[name].js',
@@ -85,20 +84,14 @@ module.exports = {
       chunks: ['style_bundle', 'index']
     }),
 
-    // Internal pages
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/view/page/page.html',
-      filename: './page.html',
-      chunks: ['style_bundle', 'page']
-    }),
-
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/view/application/_analytics.html'),
-        location: 'analytics',
+        path: path.join(
+          __dirname,
+          './src/view/templates/_T_PayWallModal_udf_figma.html'
+        ),
+        location: 'T_PayWallModal_udf_figma',
         template_filename: '*',
         priority: 'replace'
       }

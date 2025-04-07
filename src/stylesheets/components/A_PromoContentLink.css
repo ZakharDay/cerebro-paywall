@@ -1,0 +1,7 @@
+.A_PromoContentLink {
+  color: var(--interactive-initial, #629e8e);
+
+  &:hover {
+    color: var(--interactive-hover, #629e8e);
+  }
+}

@@ -1,0 +1,43 @@
+.O_EntityBar {
+  display: flex;
+  /* width: 1188px; */
+  padding: var(--O_EntityBar-padding, 24px);
+  justify-content: space-between;
+  align-items: stretch;
+  gap: var(--O_EntityBar-gap, 24px);
+  border-radius: 8px;
+
+  border: 1px solid var(--border-default, #e6e5e5);
+  background: var(--card-bg-default, #fff);
+  box-shadow: 0px 4px 4px 0px var(--shadow-default, rgba(0, 0, 0, 0.05));
+
+  &.accent {
+    border: 1px solid var(--border-accent, #bbddd2);
+    background: var(--card-bg-accent, #f8fcfb);
+    box-shadow: 0px 4px 4px 0px var(--shadow-accent, rgba(86, 170, 143, 0.1));
+  }
+
+  .W_CardContentLeft {
+    display: flex;
+    flex-wrap: nowrap;
+    /* align-items: flex-start; */
+    align-items: center;
+    gap: var(--O_EntityBar-gap, 24px);
+    flex: 1 0 0;
+  }
+
+  .W_CardContentRight {
+    display: flex;
+    flex-wrap: nowrap;
+    /* padding-right: var(--O_EntityBar-padding-extended, 48px); */
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: var(--O_EntityBar-gap, 24px);
+
+    .C_TitleDescRow {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.M_TitleWithDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--M_TitleWithDescription-ui_property-gap, 4px);
+
+  /* Context based */
+  &.uiProperty {
+    .A_Text {
+      &:first-child {
+        color: var(--text-secondary, #363636);
+
+        /* font-family: 'PT Root UI';
+        font-size: var(--ui-label-font-size, 12px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--ui-label-line-height, 16px); */
+      }
+
+      &:last-child {
+        color: var(--text-primary, #000);
+
+        /* font-family: 'PT Root UI';
+        font-size: var(--ui-accent-text-medium-font-size, 16px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--ui-accent-text-medium-line-height, 20px); */
+      }
+    }
+  }
+}

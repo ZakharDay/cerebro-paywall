@@ -1,0 +1,7 @@
+.M_FormField {
+  display: flex;
+  width: 468px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--M_FormField-gap, 12px);
+}

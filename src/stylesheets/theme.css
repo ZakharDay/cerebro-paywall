@@ -1,0 +1,141 @@
+/* Light */
+:root {
+  --text-primary: #000000;
+  --text-secondary: #363636;
+  --text-inverted: #ffffff;
+  --text-muted: #9b9b9b;
+  --body-bg: #fbfaf9;
+  --card-bg-default: #ffffff;
+  --card-bg-default-transparent: rgba(255, 255, 255, 0);
+  --card-bg-accent: #f8fcfb;
+  --border-accent: #bbddd2;
+  --border-default: #e6e5e5;
+  --icon-default: #9b9b9b;
+  --icon-accent: #629e8e;
+  --icon-active: #000000;
+  --interactive-initial: #629e8e;
+  --interactive-hover: #36c99a;
+  --interactive-disabled: #9b9b9b;
+  --danger: #ff5252;
+  --danger-light-background: #ffd6d6;
+  --danger-dark-background: #ffd6d6;
+  --success-background: #e8ffd6;
+  --modal-fader: rgba(0, 0, 0, 0.2);
+  --shadow-default: rgba(0, 0, 0, 0.05);
+  --shadow-accent: rgba(86, 170, 143, 0.1);
+  --logo-text: #2e2e2e;
+  --brand-off-white-yellow: #fbfaf9;
+  --brand-like-black: #2e2e2e;
+  --brand-yellow: #f5d60a;
+  --brand-green: #629e8e;
+  --form-input-placeholder: #989b9a;
+  --form-input-text: #4d4f4f;
+  --form-input-border: #c8cccb;
+  --form-input-background: #f2f5f4;
+  --select-option-background: #f2f5f4;
+  --select-option-background-hover: #d6e9e2;
+  --select-option-text: #4d4f4f;
+  --select-option-text-active: #629e8e;
+  --tab-bar-inactive-background: #f1f1f1;
+  --tab-bar-active-background: #ffffff;
+  --tab-bar-hover-background: #e4e7e6;
+}
+
+.Q_Logo {
+  background-image: url('../images/cerebro_wallet_logo.svg');
+}
+
+/* Dark */
+body.dark {
+  --text-primary: #c4c4cb;
+  --text-secondary: #cfd5e8;
+  --text-inverted: #ffffff;
+  --text-muted: #9b9b9b;
+  --body-bg: #3b3b3f;
+  --card-bg-default: #2f2f32;
+  --card-bg-default-transparent: rgba(47, 47, 50, 0);
+  --card-bg-accent: #212423;
+  --border-accent: #30745f;
+  --border-default: #242424;
+  --icon-default: #9b9b9b;
+  --icon-accent: #629e8e;
+  --icon-active: #c4c4cb;
+  --interactive-initial: #629e8e;
+  --interactive-hover: #36c99a;
+  --interactive-disabled: #9b9b9b;
+  --danger: #ff5252;
+  --danger-light-background: #ffd6d6;
+  --danger-dark-background: #3f3b3b;
+  --success-background: #e8ffd6;
+  --modal-fader: rgba(255, 255, 255, 0.2);
+  --shadow-default: rgba(0, 0, 0, 0.15);
+  --shadow-accent: rgba(0, 0, 0, 0.15);
+  --logo-text: #cfd5e8;
+  --brand-off-white-yellow: #fbfaf9;
+  --brand-like-black: #cfd5e8;
+  --brand-yellow: #f5d60a;
+  --brand-green: #629e8e;
+  --form-input-placeholder: #555557;
+  --form-input-text: #c4c4cb;
+  --form-input-border: #555557;
+  --form-input-background: #232324;
+  --select-option-background: #232324;
+  --select-option-background-hover: #323234;
+  --select-option-text: #c4c4cb;
+  --select-option-text-active: #629e8e;
+  --tab-bar-inactive-background: #232324;
+  --tab-bar-active-background: #2f2f32;
+  --tab-bar-hover-background: #323234;
+
+  .Q_Logo {
+    background-image: url('../images/cerebro_wallet_logo_dark.svg');
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #c4c4cb;
+    --text-secondary: #cfd5e8;
+    --text-inverted: #ffffff;
+    --text-muted: #9b9b9b;
+    --body-bg: #3b3b3f;
+    --card-bg-default: #2f2f32;
+    --card-bg-default-transparent: rgba(47, 47, 50, 0);
+    --card-bg-accent: #212423;
+    --border-accent: #30745f;
+    --border-default: #242424;
+    --icon-default: #9b9b9b;
+    --icon-accent: #629e8e;
+    --icon-active: #c4c4cb;
+    --interactive-initial: #629e8e;
+    --interactive-hover: #36c99a;
+    --interactive-disabled: #9b9b9b;
+    --danger: #ff5252;
+    --danger-light-background: #ffd6d6;
+    --danger-dark-background: #3f3b3b;
+    --success-background: #e8ffd6;
+    --modal-fader: rgba(255, 255, 255, 0.2);
+    --shadow-default: rgba(0, 0, 0, 0.15);
+    --shadow-accent: rgba(0, 0, 0, 0.15);
+    --logo-text: #cfd5e8;
+    --brand-off-white-yellow: #fbfaf9;
+    --brand-like-black: #cfd5e8;
+    --brand-yellow: #f5d60a;
+    --brand-green: #629e8e;
+    --form-input-placeholder: #555557;
+    --form-input-text: #c4c4cb;
+    --form-input-border: #555557;
+    --form-input-background: #232324;
+    --select-option-background: #232324;
+    --select-option-background-hover: #323234;
+    --select-option-text: #c4c4cb;
+    --select-option-text-active: #629e8e;
+    --tab-bar-inactive-background: #232324;
+    --tab-bar-active-background: #2f2f32;
+    --tab-bar-hover-background: #323234;
+  }
+
+  .Q_Logo {
+    background-image: url('../images/cerebro_wallet_logo_dark.svg');
+  }
+}

@@ -1,0 +1,13 @@
+.A_IconButton {
+  cursor: pointer;
+
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.close {
+    background-image: url('../../images/x.svg');
+  }
+}

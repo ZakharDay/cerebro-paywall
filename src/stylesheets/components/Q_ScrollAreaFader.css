@@ -1,0 +1,12 @@
+.Q_ScrollAreaFader {
+  width: 680px;
+  height: var(--Q_ScrollAreaFader-height, 36px);
+  position: absolute;
+  top: -36px;
+  border-right: 1px solid var(--border-default, #e6e5e5);
+  background: linear-gradient(
+    180deg,
+    var(--card-bg-default-transparent, rgba(255, 255, 255, 0)) 0%,
+    var(--card-bg-default, #fff) 50%
+  );
+}

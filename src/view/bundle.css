@@ -1,6 +1,43 @@
-@import './application/vars.css';
-@import './application/reset.css';
-@import './application/fonts.css';
-@import './application/basics.css';
-@import './index/index.css';
-@import './page/page.css';
+@import '../stylesheets/theme.css';
+@import '../stylesheets/screen.css';
+@import '../stylesheets/reset.css';
+@import '../stylesheets/fonts.css';
+@import '../stylesheets/basics.css';
+@import '../stylesheets/typographics.css';
+
+/*  */
+@import '../stylesheets/components/Q_Logo.css';
+
+@import '../stylesheets/components/A_PromoContentLink.css';
+@import '../stylesheets/components/A_Input.css';
+/*  */
+
+@import '../stylesheets/components/A_Button.css';
+@import '../stylesheets/components/A_TabButton.css';
+@import '../stylesheets/components/A_IconButton.css';
+
+/*  */
+@import '../stylesheets/components/M_TwoRowButtonSet.css';
+@import '../stylesheets/components/M_ButtonSet.css';
+@import '../stylesheets/components/M_FormField.css';
+@import '../stylesheets/components/M_PayWallWithPromoPromoText.css';
+/*  */
+
+@import '../stylesheets/components/M_TabBar.css';
+@import '../stylesheets/components/M_TitleWithDescription.css';
+@import '../stylesheets/components/M_LabelsWithDivider.css';
+@import '../stylesheets/components/M_CabinetNameWithId.css';
+
+/*  */
+@import '../stylesheets/components/O_PayWallContentHeader.css';
+@import '../stylesheets/components/O_PayWallContentActionBar.css';
+/*  */
+
+@import '../stylesheets/components/O_EntityBar.css';
+@import '../stylesheets/components/O_PayWallContentPaymentForm.css';
+@import '../stylesheets/components/O_PayWallContent.css';
+@import '../stylesheets/components/O_PromoContent.css';
+
+@import '../stylesheets/components/S_PayWallWithPromoModal.css';
+
+@import '../stylesheets/components/T_PayWallModal.css';

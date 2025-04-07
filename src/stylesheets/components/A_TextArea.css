@@ -1,0 +1,10 @@
+.A_TextArea {
+  display: flex;
+  height: 92px;
+  padding: var(--A_Input-textarea-padding-vertical, 16px);
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: var(--A_Input-default-border-radius, 8px);
+  border: 1px solid var(--form-input-border, #c8cccb);
+  background: var(--form-input-background, #f2f5f4);
+}

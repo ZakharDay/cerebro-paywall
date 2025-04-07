@@ -1,0 +1,202 @@
+.uiChipText {
+  font-size: 10px;
+  line-height: 13px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiLabel {
+  font-size: var(--ui-label-font-size);
+  line-height: var(--ui-label-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.uiHeading1 {
+  font-size: var(--ui-heading-1-font-size);
+  line-height: var(--ui-heading-1-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.uiHeading2 {
+  font-size: var(--ui-heading-2-font-size);
+  line-height: var(--ui-heading-2-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.uiDescriptor {
+  font-size: var(--ui-descriptor-font-size);
+  line-height: var(--ui-descriptor-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiParagraphSmall {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiParagraphMedium {
+  font-size: var(--ui-paragraph-medium-font-size);
+  line-height: var(--ui-paragraph-medium-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiListItem {
+  font-size: var(--ui-list-item-font-size);
+  line-height: var(--ui-list-item-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiTextMedium {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiAccentTextSmall {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiAccentTextMedium {
+  font-size: var(--ui-accent-text-medium-font-size);
+  line-height: var(--ui-accent-text-medium-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.uiAccentTextLarge {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.uiButtonTextDefault {
+  font-size: var(--ui-button-text-default-font-size);
+  line-height: var(--ui-button-text-default-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiButtonTextLarge {
+  font-size: var(--ui-button-text-large-font-size);
+  line-height: var(--ui-button-text-large-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiTabButtonText {
+  font-size: var(--ui-tab-button-text-font-size);
+  line-height: var(--ui-tab-button-text-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiFormLabel {
+  font-size: var(--ui-form-label-font-size);
+  line-height: var(--ui-form-label-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.uiFormText {
+  font-size: var(--ui-form-text-font-size);
+  line-height: var(--ui-form-text-line-height);
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.displayHeadingLarge {
+  font-size: 56px;
+  line-height: 62px;
+  font-family: 'Manrope', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.displayHeadingMedium {
+  font-size: 34px;
+  line-height: 48px;
+  font-family: 'Manrope', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.displayHeading3 {
+  font-size: var(--display-heading-3-font-size);
+  line-height: var(--display-heading-3-line-height);
+  font-family: 'Manrope', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.displayDescriptorSmall {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.displayParagraphLarge {
+  font-size: 26px;
+  line-height: 34px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.displayParagraphSmall {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.documentHeading1 {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.documentHeading2 {
+  font-size: 30px;
+  line-height: 42px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.documentHeading3 {
+  font-size: 26px;
+  line-height: 36px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.documentParagraph {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.documentListItem {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.documentDescriptor {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}

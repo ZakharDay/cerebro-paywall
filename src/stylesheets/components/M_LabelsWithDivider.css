@@ -1,0 +1,7 @@
+.M_LabelsWithDivider {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--M_LabelsWithDivider-gap, 8px);
+  width: 100%;
+  color: var(--text-secondary, #363636);
+}

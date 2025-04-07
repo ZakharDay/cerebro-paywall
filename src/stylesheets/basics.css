@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: var(--body-bg, #fbfaf9);
+}
