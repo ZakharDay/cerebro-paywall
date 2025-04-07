@@ -1,4 +1,17 @@
 .M_PayWallWithPromoPromoText {
+  /* ??? */
+  --M_PayWallWithPromoPromoText: 504px;
+  /*  */
+
+  --M_PayWallWithPromoPromoText-h1-margin-top: 12px;
+  --M_PayWallWithPromoPromoText-h2-margin-top: 24px;
+  --M_PayWallWithPromoPromoText-descriptor-margin-top: 6px;
+  --M_PayWallWithPromoPromoText-p_first-margin-top: 32px;
+  --M_PayWallWithPromoPromoText-li-margin-top: 8px;
+  --M_PayWallWithPromoPromoText-p-list-margin-top: 6px;
+  --M_PayWallWithPromoPromoText-list-p-margin-top: 16px;
+  --M_PayWallWithPromoPromoText-list-list-margin-top: 16px;
+
   width: var(--M_PayWallWithPromoPromoText, 504px);
   font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
   color: var(--text-primary, #000);
@@ -109,5 +122,19 @@
 
   a:active {
     color: var(--interactive-hover, #629e8e);
+  }
+}
+
+@media (max-width: 1280px) {
+  .M_PayWallWithPromoPromoText {
+    --M_PayWallWithPromoPromoText: 444px;
+    --M_PayWallWithPromoPromoText-h1-margin-top: 10px;
+    --M_PayWallWithPromoPromoText-h2-margin-top: 22px;
+    --M_PayWallWithPromoPromoText-descriptor-margin-top: 4px;
+    --M_PayWallWithPromoPromoText-p_first-margin-top: 30px;
+    --M_PayWallWithPromoPromoText-li-margin-top: 6px;
+    --M_PayWallWithPromoPromoText-p-list-margin-top: 4px;
+    --M_PayWallWithPromoPromoText-list-p-margin-top: 14px;
+    --M_PayWallWithPromoPromoText-list-list-margin-top: 14px;
   }
 }

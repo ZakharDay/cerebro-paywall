@@ -1,7 +1,15 @@
 .M_LabelsWithDivider {
+  --M_LabelsWithDivider-gap: 8px;
+
   display: inline-flex;
   align-items: flex-start;
   gap: var(--M_LabelsWithDivider-gap, 8px);
   width: 100%;
   color: var(--text-secondary, #363636);
+}
+
+@media (max-width: 1280px) {
+  .M_LabelsWithDivider {
+    --M_LabelsWithDivider-gap: 8px;
+  }
 }

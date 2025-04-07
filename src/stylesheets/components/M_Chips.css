@@ -1,2 +1,7 @@
 .M_Chips {
 }
+
+@media (max-width: 1280px) {
+  .M_Chips {
+  }
+}

@@ -8,3 +8,8 @@
   border: 1px solid var(--form-input-border, #c8cccb);
   background: var(--form-input-background, #f2f5f4);
 }
+
+@media (max-width: 1280px) {
+  .A_TextArea {
+  }
+}

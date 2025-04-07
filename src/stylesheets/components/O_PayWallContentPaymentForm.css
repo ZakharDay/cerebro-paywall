@@ -1,4 +1,7 @@
 .O_PayWallContentPaymentForm {
+  --O_PayWallContentPaymentForm-padding-top: 12px;
+  --O_PayWallContentPaymentForm-padding-bottom: 36px;
+
   display: flex;
   flex-direction: column;
   /* justify-content: stretch; */
@@ -36,5 +39,12 @@
     flex-direction: column;
     align-items: center;
     gap: var(--C_FormFields-gap, 28px);
+  }
+}
+
+@media (max-width: 1280px) {
+  .O_PayWallContentPaymentForm {
+    --O_PayWallContentPaymentForm-padding-top: 6px;
+    --O_PayWallContentPaymentForm-padding-bottom: 26px;
   }
 }

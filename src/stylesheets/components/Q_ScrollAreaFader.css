@@ -1,4 +1,6 @@
 .Q_ScrollAreaFader {
+  --Q_ScrollAreaFader-height: 36px;
+
   width: 680px;
   height: var(--Q_ScrollAreaFader-height, 36px);
   position: absolute;
@@ -9,4 +11,10 @@
     var(--card-bg-default-transparent, rgba(255, 255, 255, 0)) 0%,
     var(--card-bg-default, #fff) 50%
   );
+}
+
+@media (max-width: 1280px) {
+  .Q_ScrollAreaFader {
+    --Q_ScrollAreaFader-height: 26px;
+  }
 }

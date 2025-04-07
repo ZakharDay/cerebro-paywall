@@ -1,4 +1,9 @@
 .S_PayWallWithPromoModal {
+  --S_PayWallWithPromo-padding-horizontal: 48px;
+  --S_PayWallWithPromo-padding-vertical: 36px;
+  --S_PayWallWithPromo-footer-padding-vertical: 12px;
+  --S_PayWallWithPromo-gap: 48px;
+
   position: relative;
 
   display: flex;
@@ -18,5 +23,14 @@
     position: absolute;
     right: 8px;
     top: 8px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .S_PayWallWithPromoModal {
+    --S_PayWallWithPromo-padding-horizontal: 38px;
+    --S_PayWallWithPromo-padding-vertical: 26px;
+    --S_PayWallWithPromo-footer-padding-vertical: 6px;
+    --S_PayWallWithPromo-gap: 38px;
   }
 }

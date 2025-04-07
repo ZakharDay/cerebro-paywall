@@ -1,4 +1,7 @@
 .M_TitleWithDescription {
+  --M_TitleWithDescription-column_display_h3_p2-gap: 12px;
+  --M_TitleWithDescription-ui_property-gap: 4px;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -27,5 +30,12 @@
         line-height: var(--ui-accent-text-medium-line-height, 20px); */
       }
     }
+  }
+}
+
+@media (max-width: 1280px) {
+  .M_TitleWithDescription {
+    --M_TitleWithDescription-column_display_h3_p2-gap: 10px;
+    --M_TitleWithDescription-ui_property-gap: 4px;
   }
 }

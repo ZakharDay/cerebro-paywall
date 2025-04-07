@@ -1,4 +1,6 @@
 .O_PayWallContent {
+  --O_PayWallContent-width: 680px;
+
   display: flex;
   width: var(--O_PayWallContent-width, 680px);
   min-width: 564px;
@@ -9,4 +11,10 @@
   align-self: stretch;
 
   border-right: 1px solid var(--border-default, #e6e5e5);
+}
+
+@media (max-width: 1280px) {
+  .O_PayWallContent {
+    --O_PayWallContent-width: 620px;
+  }
 }

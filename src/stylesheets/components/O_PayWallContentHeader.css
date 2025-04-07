@@ -1,4 +1,6 @@
 .O_PayWallContentHeader {
+  --O_PayWallContentHeader: 12px;
+
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -13,5 +15,11 @@
     .A_Text {
       color: var(--text-primary, #000);
     }
+  }
+}
+
+@media (max-width: 1280px) {
+  .O_PayWallContentHeader {
+    --O_PayWallContentHeader: 6px;
   }
 }

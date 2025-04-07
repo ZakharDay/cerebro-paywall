@@ -1,4 +1,8 @@
 .O_EntityBar {
+  --O_EntityBar-padding: 24px;
+  --O_EntityBar-padding-extended: 48px;
+  --O_EntityBar-gap: 24px;
+
   display: flex;
   /* width: 1188px; */
   padding: var(--O_EntityBar-padding, 24px);
@@ -39,5 +43,13 @@
       align-items: flex-start;
       gap: 24px;
     }
+  }
+}
+
+@media (max-width: 1280px) {
+  .O_EntityBar {
+    --O_EntityBar-padding: 20px;
+    --O_EntityBar-padding-extended: 46px;
+    --O_EntityBar-gap: 20px;
   }
 }

@@ -1,5 +1,13 @@
 .M_ButtonSet {
+  --M_ButtonSet-gap: 16px;
+
   display: flex;
   align-items: center;
   gap: var(--M_ButtonSet-gap, 16px);
+}
+
+@media (max-width: 1280px) {
+  .M_ButtonSet {
+    --M_ButtonSet-gap: 12px;
+  }
 }

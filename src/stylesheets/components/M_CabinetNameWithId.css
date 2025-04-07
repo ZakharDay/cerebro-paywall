@@ -1,4 +1,6 @@
 .M_CabinetNameWithId {
+  --M_CabinetNameWithId-gap: 6px;
+
   display: inline-flex;
   align-items: flex-start;
   gap: var(--M_CabinetNameWithId-gap, 6px);
@@ -16,5 +18,11 @@
 
   a {
     color: var(--interactive-initial, #629e8e);
+  }
+}
+
+@media (max-width: 1280px) {
+  .M_CabinetNameWithId {
+    --M_CabinetNameWithId-gap: 6px;
   }
 }

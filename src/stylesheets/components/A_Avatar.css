@@ -1,0 +1,11 @@
+.A_Avatar {
+  --A_Avatar-width: 40px;
+  --A_Avatar-high: 40px;
+}
+
+@media (max-width: 1280px) {
+  .A_Avatar {
+    --A_Avatar-width: 32px;
+    --A_Avatar-high: 32px;
+  }
+}
