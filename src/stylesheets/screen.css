@@ -32,7 +32,7 @@
   --display-heading-3-font-size: 24px;
   --display-heading-3-line-height: 37px;
 
-  --A_ToggleOpenButton-padding-horizontal: 4px;
+  /* --A_ToggleOpenButton-padding-horizontal: 4px;
   --A_ToggleOpenButton-padding-vertical: 4px;
 
   --A_Input-text_compact-padding-vertical: 16px;
@@ -61,7 +61,7 @@
   --W_SideBarMenuContent-padding-horizontal: 36px;
 
   --O_MenuBar-padding-vertical: 40px;
-  --O_MenuBar-padding-horizontal: 10px;
+  --O_MenuBar-padding-horizontal: 10px; */
 }
 
 /* Small Desktop */
@@ -99,7 +99,7 @@
     --display-heading-3-font-size: 22px;
     --display-heading-3-line-height: 35px;
 
-    --A_ToggleOpenButton-padding-horizontal: 2px;
+    /* --A_ToggleOpenButton-padding-horizontal: 2px;
     --A_ToggleOpenButton-padding-vertical: 2px;
 
     --A_Input-text_compact-padding-vertical: 0px;
@@ -128,6 +128,6 @@
     --W_SideBarMenuContent-padding-horizontal: 30px;
 
     --O_MenuBar-padding-vertical: 32px;
-    --O_MenuBar-padding-horizontal: 8px;
+    --O_MenuBar-padding-horizontal: 8px; */
   }
 }

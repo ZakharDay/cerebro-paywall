@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
   font-weight: 400;
   background: var(--body-bg, #fbfaf9);
 }

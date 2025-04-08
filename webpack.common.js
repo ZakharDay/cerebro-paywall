@@ -8,8 +8,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    style_bundle: './src/view/style_bundle.js',
-    index: './src/view/index/index.js'
+    style_bundle: './src/view/style_bundle.js'
   },
   output: {
     filename: '[name].js',
@@ -79,23 +78,34 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/view/index/index.html',
+      template: './src/view/index.html',
       filename: './index.html',
-      chunks: ['style_bundle', 'index']
+      chunks: ['style_bundle']
     }),
 
-    // Partials
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(
-          __dirname,
-          './src/view/templates/_T_PayWallModal_udf_figma.html'
-        ),
-        location: 'T_PayWallModal_udf_figma',
-        template_filename: '*',
-        priority: 'replace'
-      }
-    ])
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/view/pages/full.html',
+      filename: './pages/full.html',
+      chunks: ['style_bundle']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/view/pages/no-scroll.html',
+      filename: './pages/no-scroll.html',
+      chunks: ['style_bundle']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/view/pages/no-promo.html',
+      filename: './pages/no-promo.html',
+      chunks: ['style_bundle']
+    })
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

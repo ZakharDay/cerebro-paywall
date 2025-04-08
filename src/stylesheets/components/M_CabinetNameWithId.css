@@ -18,6 +18,11 @@
 
   a {
     color: var(--interactive-initial, #629e8e);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--interactive-hover, #629e8e);
+    }
   }
 }
 
