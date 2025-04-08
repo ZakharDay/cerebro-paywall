@@ -4,7 +4,6 @@
   --O_EntityBar-gap: 24px;
 
   display: flex;
-  /* width: 1188px; */
   padding: var(--O_EntityBar-padding, 24px);
   justify-content: space-between;
   align-items: stretch;
@@ -24,7 +23,6 @@
   .W_CardContentLeft {
     display: flex;
     flex-wrap: nowrap;
-    /* align-items: flex-start; */
     align-items: center;
     gap: var(--O_EntityBar-gap, 24px);
     flex: 1 0 0;
@@ -33,7 +31,6 @@
   .W_CardContentRight {
     display: flex;
     flex-wrap: nowrap;
-    /* padding-right: var(--O_EntityBar-padding-extended, 48px); */
     justify-content: flex-end;
     align-items: flex-end;
     gap: var(--O_EntityBar-gap, 24px);
