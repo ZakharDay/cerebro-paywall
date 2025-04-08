@@ -36,9 +36,9 @@
     gap: var(--O_EntityBar-gap, 24px);
 
     .C_TitleDescRow {
-      display: flex;
+      display: flex !important;
       align-items: flex-start;
-      gap: 24px;
+      gap: var(--O_EntityBar-gap, 24px);
     }
   }
 }
