@@ -35,11 +35,17 @@
     align-items: flex-end;
     gap: var(--O_EntityBar-gap, 24px);
 
-    .C_TitleDescRow {
-      display: flex !important;
+    /* .C_TitleDescRow {
+      display: flex;
       align-items: flex-start;
       gap: var(--O_EntityBar-gap, 24px);
-    }
+    } */
+  }
+
+  .C_TitleDescRow {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--O_EntityBar-gap, 24px);
   }
 }
 
