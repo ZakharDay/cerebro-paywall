@@ -1,0 +1,15 @@
+.A_InputButton {
+  cursor: pointer;
+
+  /* ui-form-text */
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-size: var(--ui-form-text-font-size, 16px);
+  font-weight: 500;
+  line-height: var(--ui-form-text-line-height, 20px);
+
+  color: var(--interactive-initial, #629e8e);
+
+  &:hover {
+    color: var(--interactive-hover, #36c99a);
+  }
+}

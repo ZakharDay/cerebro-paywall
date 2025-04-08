@@ -4,7 +4,7 @@
 
   width: var(--Q_Logo-width, 100px);
   height: var(--Q_Logo-height, 40px);
-  /* background-image: url('../../images/cerebro_wallet_logo.svg'); */
+  background-image: url('../../images/cerebro_wallet_logo.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -13,5 +13,17 @@
   .Q_Logo {
     --Q_Logo-width: 80px;
     --Q_Logo-height: 32px;
+  }
+}
+
+body.dark {
+  .Q_Logo {
+    background-image: url('../../images/cerebro_wallet_logo_dark.svg');
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .Q_Logo {
+    background-image: url('../../images/cerebro_wallet_logo_dark.svg');
   }
 }

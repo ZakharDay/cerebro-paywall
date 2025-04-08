@@ -11,9 +11,19 @@
 
   .W_PromoTextCenterizer {
     flex: 1 0 0;
+    overflow-y: scroll;
   }
 
   .W_PromoCodeCenterizer {
+    position: relative;
+    width: 100%;
+    padding: var(--S_PayWallWithPromo-footer-padding-vertical, 12px)
+      var(--S_PayWallWithPromo-padding-horizontal, 48px);
+
+    .A_Label,
+    .A_Input {
+      text-align: left;
+    }
   }
 }
 

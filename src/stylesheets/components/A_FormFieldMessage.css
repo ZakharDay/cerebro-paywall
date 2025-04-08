@@ -1,0 +1,10 @@
+.A_FormFieldMessage {
+  /* color: var(--danger, #FF5252); */
+  text-align: center;
+
+  /* ui-label */
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-size: var(--ui-label-font-size, 12px);
+  font-weight: 400;
+  line-height: var(--ui-label-line-height, 16px);
+}

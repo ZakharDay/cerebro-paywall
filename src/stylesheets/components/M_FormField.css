@@ -2,10 +2,24 @@
   --M_FormField-gap: 12px;
 
   display: flex;
-  width: 468px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: var(--M_FormField-gap, 12px);
+
+  & > * {
+    width: 100%;
+  }
+
+  &.error {
+    .A_Input {
+      border: 1px solid var(--danger, #ff5252);
+    }
+
+    .A_FormFieldMessage {
+      color: var(--danger, #ff5252);
+    }
+  }
 }
 
 @media (max-width: 1280px) {

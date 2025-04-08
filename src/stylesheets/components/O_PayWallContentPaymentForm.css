@@ -17,6 +17,7 @@
     var(--S_PayWallWithPromo-padding-horizontal, 48px);
 
   gap: var(--S_PayWallWithPromo-gap, 48px);
+  overflow-y: scroll;
 
   .M_TabBar {
   }

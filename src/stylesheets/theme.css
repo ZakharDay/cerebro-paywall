@@ -41,10 +41,6 @@
   --tab-bar-hover-background: #e4e7e6;
 }
 
-.Q_Logo {
-  background-image: url('../images/cerebro_wallet_logo.svg');
-}
-
 /* Dark */
 body.dark {
   --text-primary: #c4c4cb;
@@ -86,10 +82,6 @@ body.dark {
   --tab-bar-inactive-background: #232324;
   --tab-bar-active-background: #2f2f32;
   --tab-bar-hover-background: #323234;
-
-  .Q_Logo {
-    background-image: url('../images/cerebro_wallet_logo_dark.svg');
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -133,9 +125,5 @@ body.dark {
     --tab-bar-inactive-background: #232324;
     --tab-bar-active-background: #2f2f32;
     --tab-bar-hover-background: #323234;
-  }
-
-  .Q_Logo {
-    background-image: url('../images/cerebro_wallet_logo_dark.svg');
   }
 }

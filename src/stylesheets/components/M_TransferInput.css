@@ -1,0 +1,23 @@
+.M_TransferInput {
+  position: relative;
+
+  &.max {
+    .A_Input {
+      text-align: center;
+    }
+
+    .A_InputButton {
+      display: none;
+    }
+  }
+
+  .A_Input {
+    text-align: left;
+  }
+
+  .A_InputButton {
+    position: absolute;
+    top: var(--A_Input-padding-vertical, 16px);
+    right: var(--A_Input-padding-horizontal, 16px);
+  }
+}
