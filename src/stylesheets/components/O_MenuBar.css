@@ -1,0 +1,23 @@
+.O_MenuBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+
+  height: var(--O_MenuBar-height);
+  padding: var(--O_MenuBar-padding-vertical) var(--O_MenuBar-padding-horizontal);
+  border-bottom: 1px solid var(--border-default);
+
+  .W_MenuBarLeft {
+    display: flex;
+    gap: 24px;
+    flex: 1 1 auto;
+    overflow-x: scroll;
+  }
+
+  .W_MenuBarRight {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+  }
+}

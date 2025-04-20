@@ -1,48 +1,36 @@
 .A_Button {
-  --A_Button-primary_default-padding-vertical: 10px;
-  --A_Button-primary_default-padding-horizontal: 24px;
-  --A_Button-primary_default-border-radius: 4px;
-  --A_Button-primary_large-padding-vertical: 16px;
-  --A_Button-primary_large-padding-horizontal: 38px;
-  --A_Button-primary_large-border-radius: 8px;
-  --A_Button-secondary_icon-border-button-small-vertical: 8px;
-  --A_Button-secondary_icon-border-button-small-horizontal: 8px;
-  --A_Button-secondary_icon-border-radius: 4px;
-  --A_Button-secondary-default-padding-vertical: 12px;
-  --A_Button-secondary-default-padding-horizontal: 6px;
-
   display: inline-block;
+  text-decoration: none;
 
   /* ui-button-text-default */
-  font-family: 'PT Root UI';
-  font-size: var(--ui-button-text-default-font-size, 14px);
-  font-style: normal;
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-size: var(--ui-button-text-default-font-size);
   font-weight: 500;
-  line-height: var(--ui-button-text-default-line-height, 20px);
+  line-height: var(--ui-button-text-default-line-height);
 
   &.primary {
     cursor: pointer;
 
-    padding: var(--A_Button-primary_default-padding-vertical, 10px)
-      var(--A_Button-primary_default-padding-horizontal, 24px);
+    padding: var(--A_Button-primary_default-padding-vertical)
+      var(--A_Button-primary_default-padding-horizontal);
 
-    border-radius: var(--A_Button-primary_default-border-radius, 4px);
-    background: var(--interactive-initial, #629e8e);
+    border-radius: var(--A_Button-primary_default-border-radius);
+    background: var(--interactive-initial);
 
-    color: var(--text-inverted, #fff);
+    color: var(--text-inverted);
     text-align: center;
 
     &:hover {
-      background: var(--interactive-hover, #36c99a);
+      background: var(--interactive-hover);
     }
 
     .disabled {
       cursor: not-allowed;
-      background: var(--interactive-disabled, #9b9b9b);
+      background: var(--interactive-disabled);
 
       &:hover {
         cursor: not-allowed;
-        background: var(--interactive-disabled, #9b9b9b);
+        background: var(--interactive-disabled);
       }
     }
   }
@@ -50,35 +38,19 @@
   &.secondary {
     cursor: pointer;
 
-    color: var(--interactive-initial, #629e8e);
+    color: var(--interactive-initial);
     text-align: center;
 
     &:hover {
-      color: var(--interactive-hover, #629e8e);
+      color: var(--interactive-hover);
     }
 
     &.muted {
-      color: var(--text-muted, #9b9b9b);
+      color: var(--text-muted);
 
       &:hover {
-        color: var(--text-muted, #9b9b9b);
+        color: var(--text-muted);
       }
     }
-  }
-}
-
-@media (max-width: 1280px) {
-  .A_Button {
-    --A_Button-primary_default-padding-vertical: 10px;
-    --A_Button-primary_default-padding-horizontal: 24px;
-    --A_Button-primary_default-border-radius: 4px;
-    --A_Button-primary_large-padding-vertical: 0px;
-    --A_Button-primary_large-padding-horizontal: 0px;
-    --A_Button-primary_large-border-radius: 0px;
-    --A_Button-secondary_icon-border-button-small-vertical: 6px;
-    --A_Button-secondary_icon-border-button-small-horizontal: 6px;
-    --A_Button-secondary_icon-border-radius: 4px;
-    --A_Button-secondary-default-padding-vertical: 0px;
-    --A_Button-secondary-default-padding-horizontal: 0px;
   }
 }

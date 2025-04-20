@@ -1,12 +1,7 @@
 .A_PromoContentLink {
-  color: var(--interactive-initial, #629e8e);
+  color: var(--interactive-initial);
 
   &:hover {
-    color: var(--interactive-hover, #629e8e);
-  }
-}
-
-@media (max-width: 1280px) {
-  .A_PromoContentLink {
+    color: var(--interactive-hover);
   }
 }

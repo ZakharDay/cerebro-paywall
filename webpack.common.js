@@ -86,7 +86,6 @@ module.exports = {
       filename: './index.html',
       chunks: ['style_bundle']
     }),
-
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -94,7 +93,6 @@ module.exports = {
       filename: './pages/full.html',
       chunks: ['style_bundle']
     }),
-
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -102,14 +100,54 @@ module.exports = {
       filename: './pages/no-scroll.html',
       chunks: ['style_bundle']
     }),
-
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/view/pages/no-promo.html',
       filename: './pages/no-promo.html',
       chunks: ['style_bundle']
-    })
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/view/pages/layout.html',
+      filename: './pages/layout.html',
+      chunks: ['style_bundle']
+    }),
+
+    // Partials
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/view/partials/O_MenuBar.html'),
+        location: 'O_MenuBar',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/view/partials/S_NavigationBar.html'),
+        location: 'S_NavigationBar',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/view/partials/S_NoticeBar.html'),
+        location: 'S_NoticeBar',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/view/partials/S_SideBar.html'),
+        location: 'S_SideBar',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ])
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

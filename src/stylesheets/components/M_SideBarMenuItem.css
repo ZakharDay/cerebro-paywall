@@ -1,0 +1,12 @@
+.M_SideBarMenuItem {
+  .A_Button {
+    text-align: left;
+    /* color: var(--interactive-initial, #629e8e);
+
+    /* ui-button-text-default */
+    /* font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+    font-size: var(--ui-button-text-default-font-size, 14px);
+    font-weight: 500;
+    line-height: var(--ui-button-text-default-line-height, 20px); */
+  }
+}

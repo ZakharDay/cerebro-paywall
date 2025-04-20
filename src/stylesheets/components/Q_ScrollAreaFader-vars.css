@@ -1,0 +1,11 @@
+:root {
+  --Q_ScrollAreaFader-height: 36px;
+  --Q_ScrollAreaFader-top: -36px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --Q_ScrollAreaFader-height: 26px;
+    --Q_ScrollAreaFader-top: -26px;
+  }
+}

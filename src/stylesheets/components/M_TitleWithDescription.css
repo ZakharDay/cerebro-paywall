@@ -1,17 +1,14 @@
 .M_TitleWithDescription {
-  --M_TitleWithDescription-column_display_h3_p2-gap: 12px;
-  --M_TitleWithDescription-ui_property-gap: 4px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--M_TitleWithDescription-ui_property-gap, 4px);
+  gap: var(--M_TitleWithDescription-ui_property-gap);
 
   /* Context based */
   &.uiProperty {
     .A_Text {
       &:first-child {
-        color: var(--text-secondary, #363636);
+        color: var(--text-secondary);
 
         /* font-family: 'PT Root UI';
         font-size: var(--ui-label-font-size, 12px);
@@ -21,7 +18,7 @@
       }
 
       &:last-child {
-        color: var(--text-primary, #000);
+        color: var(--text-primary);
 
         /* font-family: 'PT Root UI';
         font-size: var(--ui-accent-text-medium-font-size, 16px);
@@ -30,12 +27,5 @@
         line-height: var(--ui-accent-text-medium-line-height, 20px); */
       }
     }
-  }
-}
-
-@media (max-width: 1280px) {
-  .M_TitleWithDescription {
-    --M_TitleWithDescription-column_display_h3_p2-gap: 10px;
-    --M_TitleWithDescription-ui_property-gap: 4px;
   }
 }

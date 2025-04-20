@@ -1,11 +1,9 @@
 .M_FormField {
-  --M_FormField-gap: 12px;
-
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  gap: var(--M_FormField-gap, 12px);
+  gap: var(--M_FormField-gap);
 
   & > * {
     width: 100%;
@@ -13,17 +11,11 @@
 
   &.error {
     .A_Input {
-      border: 1px solid var(--danger, #ff5252);
+      border: 1px solid var(--danger);
     }
 
     .A_FormFieldMessage {
-      color: var(--danger, #ff5252);
+      color: var(--danger);
     }
-  }
-}
-
-@media (max-width: 1280px) {
-  .M_FormField {
-    --M_FormField-gap: 10px;
   }
 }

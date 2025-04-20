@@ -1,0 +1,17 @@
+:root {
+  --W_InternalPageWithSideBarScrollArea-content-max-width: 1140px;
+  --W_InternalPageWithSideBarScrollArea-content-padding-horizontal: 40px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --W_InternalPageWithSideBarScrollArea-content-max-width: 1068px;
+    --W_InternalPageWithSideBarScrollArea-content-padding-horizontal: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --W_InternalPageWithSideBarScrollArea-content-padding-horizontal: 16px;
+  }
+}

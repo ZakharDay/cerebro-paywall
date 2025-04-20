@@ -1,8 +1,6 @@
 .O_PayWallContent {
-  --O_PayWallContent-width: 680px;
-
   display: flex;
-  width: var(--O_PayWallContent-width, 680px);
+  width: var(--O_PayWallContent-width);
   min-width: 564px;
   flex-direction: column;
   justify-content: center;
@@ -10,11 +8,5 @@
   flex-shrink: 0;
   align-self: stretch;
 
-  border-right: 1px solid var(--border-default, #e6e5e5);
-}
-
-@media (max-width: 1280px) {
-  .O_PayWallContent {
-    --O_PayWallContent-width: 620px;
-  }
+  border-right: 1px solid var(--border-default);
 }

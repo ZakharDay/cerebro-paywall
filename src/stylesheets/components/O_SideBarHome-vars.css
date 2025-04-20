@@ -1,0 +1,23 @@
+:root {
+  --O_SideBarHome-height: 60px;
+  --O_SideBarHome-padding-horizontal: 28px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --O_SideBarHome-height: 48px;
+    --O_SideBarHome-padding-horizontal: 22px;
+  }
+}
+
+@media (max-width: 1193px) {
+  :root {
+    --O_SideBarHome-padding-horizontal: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --O_SideBarHome-padding-horizontal: 16px;
+  }
+}

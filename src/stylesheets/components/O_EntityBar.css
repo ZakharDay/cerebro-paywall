@@ -1,30 +1,26 @@
 .O_EntityBar {
-  --O_EntityBar-padding: 24px;
-  --O_EntityBar-padding-extended: 48px;
-  --O_EntityBar-gap: 24px;
-
   display: flex;
-  padding: var(--O_EntityBar-padding, 24px);
+  padding: var(--O_EntityBar-padding);
   justify-content: space-between;
   align-items: stretch;
-  gap: var(--O_EntityBar-gap, 24px);
+  gap: var(--O_EntityBar-gap);
   border-radius: 8px;
 
-  border: 1px solid var(--border-default, #e6e5e5);
-  background: var(--card-bg-default, #fff);
-  box-shadow: 0px 4px 4px 0px var(--shadow-default, rgba(0, 0, 0, 0.05));
+  border: 1px solid var(--border-default);
+  background: var(--card-bg-default);
+  box-shadow: 0px 4px 4px 0px var(--shadow-default);
 
   &.accent {
-    border: 1px solid var(--border-accent, #bbddd2);
-    background: var(--card-bg-accent, #f8fcfb);
-    box-shadow: 0px 4px 4px 0px var(--shadow-accent, rgba(86, 170, 143, 0.1));
+    border: 1px solid var(--border-accent);
+    background: var(--card-bg-accent);
+    box-shadow: 0px 4px 4px 0px var(--shadow-accent);
   }
 
   .W_CardContentLeft {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    gap: var(--O_EntityBar-gap, 24px);
+    gap: var(--O_EntityBar-gap);
     flex: 1 0 0;
   }
 
@@ -33,7 +29,7 @@
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: flex-end;
-    gap: var(--O_EntityBar-gap, 24px);
+    gap: var(--O_EntityBar-gap);
 
     /* .C_TitleDescRow {
       display: flex;
@@ -46,13 +42,5 @@
     display: flex;
     align-items: flex-start;
     gap: var(--O_EntityBar-gap, 24px);
-  }
-}
-
-@media (max-width: 1280px) {
-  .O_EntityBar {
-    --O_EntityBar-padding: 20px;
-    --O_EntityBar-padding-extended: 46px;
-    --O_EntityBar-gap: 20px;
   }
 }

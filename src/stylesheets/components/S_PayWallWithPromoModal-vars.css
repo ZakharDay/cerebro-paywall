@@ -1,0 +1,17 @@
+:root {
+  --S_PayWallWithPromo-max-height: 775px;
+  --S_PayWallWithPromo-padding-horizontal: 48px;
+  --S_PayWallWithPromo-padding-vertical: 36px;
+  --S_PayWallWithPromo-footer-padding-vertical: 12px;
+  --S_PayWallWithPromo-gap: 48px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --S_PayWallWithPromo-max-height: 646px;
+    --S_PayWallWithPromo-padding-horizontal: 38px;
+    --S_PayWallWithPromo-padding-vertical: 26px;
+    --S_PayWallWithPromo-footer-padding-vertical: 6px;
+    --S_PayWallWithPromo-gap: 38px;
+  }
+}

@@ -1,4 +1,13 @@
 @font-face {
+  font-family: 'tabler-icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/tabler-icons.woff2') format('woff2'),
+    url('../fonts/tabler-icons.woff') format('woff'),
+    url('../fonts/tabler-icons.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Manrope';
   src: url('../fonts/Manrope-ExtraBold.ttf') format('truetype');
   font-weight: 800;

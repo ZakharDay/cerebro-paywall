@@ -1,0 +1,9 @@
+:root {
+  --O_PayWallContentHeader: 12px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --O_PayWallContentHeader: 6px;
+  }
+}
