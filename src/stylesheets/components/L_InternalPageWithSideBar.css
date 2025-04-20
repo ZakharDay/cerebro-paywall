@@ -67,7 +67,7 @@
   &.notice {
     .S_SideBar {
       top: var(--S_NoticeBar-height);
-      height: calc(100vh - var(--S_NoticeBar-height));
+      height: calc(100% - var(--S_NoticeBar-height));
     }
 
     .S_NavigationBar {
