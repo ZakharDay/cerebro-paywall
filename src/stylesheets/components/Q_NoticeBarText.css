@@ -1,0 +1,7 @@
+.Q_NoticeBarText {
+  /* ui-button-text-default */
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-size: var(--ui-button-text-default-font-size);
+  font-weight: 500;
+  line-height: var(--ui-button-text-default-line-height);
+}

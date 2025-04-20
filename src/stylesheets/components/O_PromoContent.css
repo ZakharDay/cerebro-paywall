@@ -1,8 +1,6 @@
 .O_PromoContent {
-  --O_PromoContent-width: 600px;
-
   display: flex;
-  width: var(--O_PromoContent-width, 600px);
+  width: var(--O_PromoContent-width);
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
@@ -17,18 +15,12 @@
   .W_PromoCodeCenterizer {
     position: relative;
     width: 100%;
-    padding: var(--S_PayWallWithPromo-footer-padding-vertical, 12px)
-      var(--S_PayWallWithPromo-padding-horizontal, 48px);
+    padding: var(--S_PayWallWithPromo-footer-padding-vertical)
+      var(--S_PayWallWithPromo-padding-horizontal);
 
     .A_Label,
     .A_Input {
       text-align: left;
     }
-  }
-}
-
-@media (max-width: 1280px) {
-  .O_PromoContent {
-    --O_PromoContent-width: 520px;
   }
 }

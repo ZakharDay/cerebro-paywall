@@ -1,0 +1,9 @@
+:root {
+  --A_IconButton-padding-horizontal: 0px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --A_IconButton-padding-horizontal: 0px;
+  }
+}

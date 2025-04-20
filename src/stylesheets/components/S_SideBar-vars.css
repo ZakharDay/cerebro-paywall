@@ -1,0 +1,21 @@
+:root {
+  --S_SideBar-width: 280px;
+  --W_SideBarMenuContent-padding-vertical: 36px;
+  --W_SideBarMenuContent-padding-horizontal: 32px;
+  --C_SideBarMenu-gap: 18px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --S_SideBar-width: 224px;
+    --W_SideBarMenuContent-padding-vertical: 30px;
+    --W_SideBarMenuContent-padding-horizontal: 26px;
+    --C_SideBarMenu-gap: 14px;
+  }
+}
+
+@media (max-width: 1193px) {
+  :root {
+    --S_SideBar-width: 100vw;
+  }
+}

@@ -1,21 +1,12 @@
 .A_IconButton {
-  --A_IconButton-padding-horizontal: 0px;
-
   cursor: pointer;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
   padding: 4px;
   background-position: center;
   background-repeat: no-repeat;
-
-  &.close {
-    background-image: url('../../images/x.svg');
-  }
-}
-
-@media (max-width: 1280px) {
-  .A_IconButton {
-    --A_IconButton-padding-horizontal: 0px;
-  }
 }

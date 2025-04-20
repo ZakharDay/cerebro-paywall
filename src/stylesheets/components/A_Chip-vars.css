@@ -1,10 +1,10 @@
-.A_Chip {
+:root {
   --A_Chip-padding-vertical: 8px;
   --A_Chip-padding-horizontal: 6px;
 }
 
-@media (max-width: 1280px) {
-  .A_Chip {
+@media (max-width: 1535px) {
+  :root {
     --A_Chip-padding-vertical: 6px;
     --A_Chip-padding-horizontal: 4px;
   }

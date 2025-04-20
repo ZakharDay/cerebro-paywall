@@ -1,11 +1,7 @@
 .A_Avatar {
-  --A_Avatar-width: 40px;
-  --A_Avatar-high: 40px;
-}
-
-@media (max-width: 1280px) {
-  .A_Avatar {
-    --A_Avatar-width: 32px;
-    --A_Avatar-high: 32px;
-  }
+  width: var(--A_Avatar-width);
+  min-width: var(--A_Avatar-width);
+  height: var(--A_Avatar-height);
+  border-radius: var(--A_Avatar-border-radius);
+  background-color: var(--border-default);
 }

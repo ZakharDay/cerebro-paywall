@@ -4,7 +4,7 @@
 
   /* ui-label */
   font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
-  font-size: var(--ui-label-font-size, 12px);
+  font-size: var(--ui-label-font-size);
   font-weight: 400;
-  line-height: var(--ui-label-line-height, 16px);
+  line-height: var(--ui-label-line-height);
 }

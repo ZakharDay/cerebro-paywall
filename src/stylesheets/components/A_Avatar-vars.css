@@ -1,0 +1,13 @@
+:root {
+  --A_Avatar-width: 40px;
+  --A_Avatar-height: 40px;
+  --A_Avatar-border-radius: 20px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --A_Avatar-width: 32px;
+    --A_Avatar-height: 32px;
+    --A_Avatar-border-radius: 16px;
+  }
+}

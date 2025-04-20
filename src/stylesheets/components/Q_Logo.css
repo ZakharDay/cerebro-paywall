@@ -1,19 +1,10 @@
 .Q_Logo {
-  --Q_Logo-width: 100px;
-  --Q_Logo-height: 40px;
-
-  width: var(--Q_Logo-width, 100px);
-  height: var(--Q_Logo-height, 40px);
+  display: block;
+  width: var(--Q_Logo-width);
+  height: var(--Q_Logo-height);
   background-image: url('../../images/cerebro_wallet_logo.svg');
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-@media (max-width: 1280px) {
-  .Q_Logo {
-    --Q_Logo-width: 80px;
-    --Q_Logo-height: 32px;
-  }
 }
 
 body.dark {

@@ -1,0 +1,31 @@
+:root {
+  /* ??? */
+  --M_PayWallWithPromoText-width: 504px;
+  /*  */
+
+  --M_PayWallWithPromoText-padding-bottom: 36px;
+
+  --M_PayWallWithPromoText-h1-margin-top: 12px;
+  --M_PayWallWithPromoText-h2-margin-top: 24px;
+  --M_PayWallWithPromoText-descriptor-margin-top: 6px;
+  --M_PayWallWithPromoText-p_first-margin-top: 32px;
+  --M_PayWallWithPromoText-li-margin-top: 8px;
+  --M_PayWallWithPromoText-p-list-margin-top: 6px;
+  --M_PayWallWithPromoText-list-p-margin-top: 16px;
+  --M_PayWallWithPromoText-list-list-margin-top: 16px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --M_PayWallWithPromoText-width: 444px;
+    --M_PayWallWithPromoText-padding-bottom: 26px;
+    --M_PayWallWithPromoText-h1-margin-top: 10px;
+    --M_PayWallWithPromoText-h2-margin-top: 22px;
+    --M_PayWallWithPromoText-descriptor-margin-top: 4px;
+    --M_PayWallWithPromoText-p_first-margin-top: 30px;
+    --M_PayWallWithPromoText-li-margin-top: 6px;
+    --M_PayWallWithPromoText-p-list-margin-top: 4px;
+    --M_PayWallWithPromoText-list-p-margin-top: 14px;
+    --M_PayWallWithPromoText-list-list-margin-top: 14px;
+  }
+}

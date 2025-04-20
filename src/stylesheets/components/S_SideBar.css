@@ -1,0 +1,29 @@
+.S_SideBar {
+  display: flex;
+  flex-direction: column;
+  width: var(--S_SideBar-width);
+  border-right: 1px solid var(--border-default);
+  background: var(--body-bg);
+
+  .W_SideBarMenuContent {
+    display: flex;
+
+    padding: var(--W_SideBarMenuContent-padding-vertical)
+      var(--W_SideBarMenuContent-padding-horizontal);
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    gap: 64px;
+    overflow-y: scroll;
+
+    .C_SideBarMenu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--C_SideBarMenu-gap);
+    }
+  }
+}

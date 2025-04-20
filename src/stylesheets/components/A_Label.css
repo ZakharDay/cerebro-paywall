@@ -1,10 +1,10 @@
 .A_Label {
   /* ui-form-label */
   font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
-  font-size: var(--ui-form-label-font-size, 16px);
+  font-size: var(--ui-form-label-font-size);
   font-weight: 500;
-  line-height: var(--ui-form-label-line-height, 20px);
+  line-height: var(--ui-form-label-line-height);
 
-  color: var(--text-secondary, #363636);
+  color: var(--text-secondary);
   text-align: center;
 }
