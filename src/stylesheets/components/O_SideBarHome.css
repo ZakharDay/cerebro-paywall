@@ -1,0 +1,20 @@
+.O_SideBarHome {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  height: var(--O_SideBarHome-height);
+  padding-left: var(--O_SideBarHome-padding-horizontal);
+  padding-right: var(--O_SideBarHome-padding-horizontal);
+  border-bottom: 1px solid var(--border-default);
+
+  .W_SideBarHomeLeft {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .W_SideBarHomeRight {
+  }
+}

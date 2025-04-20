@@ -1,0 +1,18 @@
+:root {
+  --S_NoticeBar-height: 48px;
+  --S_NoticeBar-padding-horizontal: 40px;
+  --S_NoticeBar-gap: 26px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --S_NoticeBar-padding-horizontal: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --S_NoticeBar-padding-horizontal: 16px;
+    --S_NoticeBar-gap: 12px;
+  }
+}

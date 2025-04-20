@@ -1,16 +1,8 @@
 .M_TwoRowButtonSet {
-  --M_TwoRowButtonSet-gap: 16px;
-
   display: flex;
-  padding: var(--S_PayWallWithPromo-footer-padding-vertical, 12px) 0px;
+  padding: var(--S_PayWallWithPromo-footer-padding-vertical) 0px;
   flex-direction: column;
   align-items: center;
-  gap: var(--M_TwoRowButtonSet-gap, 16px);
+  gap: var(--M_TwoRowButtonSet-gap);
   align-self: stretch;
-}
-
-@media (max-width: 1280px) {
-  .M_TwoRowButtonSet {
-    --M_TwoRowButtonSet-gap: 14px;
-  }
 }

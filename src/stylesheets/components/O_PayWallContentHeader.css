@@ -1,6 +1,4 @@
 .O_PayWallContentHeader {
-  --O_PayWallContentHeader: 12px;
-
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -9,17 +7,11 @@
   .M_TitleWithDescription {
     align-items: center;
     align-self: stretch;
-    gap: var(--M_TitleWithDescription-column_display_h3_p2-gap, 12px);
-    padding: var(--O_PayWallContentHeader, 12px) 0px;
+    gap: var(--M_TitleWithDescription-column_display_h3_p2-gap);
+    padding: var(--O_PayWallContentHeader) 0px;
 
     .A_Text {
-      color: var(--text-primary, #000);
+      color: var(--text-primary);
     }
-  }
-}
-
-@media (max-width: 1280px) {
-  .O_PayWallContentHeader {
-    --O_PayWallContentHeader: 6px;
   }
 }

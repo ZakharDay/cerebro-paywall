@@ -1,0 +1,21 @@
+:root {
+  --O_MenuBar-height: 60px;
+  --O_MenuBar-padding-vertical: 10px;
+  --O_MenuBar-padding-horizontal: 40px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --O_MenuBar-height: 48px;
+    --O_MenuBar-padding-vertical: 14px;
+    --O_MenuBar-padding-horizontal: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    /* --O_MenuBar-height: 48px; */
+    /* --O_MenuBar-padding-vertical: 14px; */
+    --O_MenuBar-padding-horizontal: 16px;
+  }
+}

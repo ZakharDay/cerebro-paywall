@@ -1,0 +1,9 @@
+:root {
+  --M_CabinetNameWithId-gap: 6px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --M_CabinetNameWithId-gap: 6px;
+  }
+}

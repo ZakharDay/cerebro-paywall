@@ -1,43 +1,31 @@
 .A_TabButton {
-  --A_TabButton-padding-horizontal: 20px;
-  --A_TabButton-padding-vertical: 12px;
-  --A_TabButton-border-radius: 4px;
-
   cursor: pointer;
 
   display: inline-block;
   /* display: inline-flex; */
   /* align-items: center; */
 
-  padding: var(--A_TabButton-padding-vertical, 12px)
-    var(--A_TabButton-padding-horizontal, 20px);
+  padding: var(--A_TabButton-padding-vertical)
+    var(--A_TabButton-padding-horizontal);
 
-  border-radius: var(--A_TabButton-border-radius, 4px);
-  background: var(--tab-bar-inactive-background, #f1f1f1);
+  border-radius: var(--A_TabButton-border-radius);
+  background: var(--tab-bar-inactive-background);
 
-  color: var(--text-secondary, #363636);
+  color: var(--text-secondary);
 
   /* ui-tab-button-text */
   font-family: 'PT Root UI';
-  font-size: var(--ui-tab-button-text-font-size, 18px);
+  font-size: var(--ui-tab-button-text-font-size);
   font-style: normal;
   font-weight: 500;
-  line-height: var(--ui-tab-button-text-line-height, 24px); /* 133.333% */
+  line-height: var(--ui-tab-button-text-line-height); /* 133.333% */
 
   &:hover {
-    background: var(--tab-bar-hover-background, #e4e7e6);
+    background: var(--tab-bar-hover-background);
   }
 
   &.active {
-    background: var(--tab-bar-active-background, #fff);
-    box-shadow: 0px 4px 4px 0px var(--shadow-default, rgba(0, 0, 0, 0.05));
-  }
-}
-
-@media (max-width: 1280px) {
-  .A_TabButton {
-    --A_TabButton-padding-horizontal: 16px;
-    --A_TabButton-padding-vertical: 12px;
-    --A_TabButton-border-radius: 4px;
+    background: var(--tab-bar-active-background);
+    box-shadow: 0px 4px 4px 0px var(--shadow-default);
   }
 }

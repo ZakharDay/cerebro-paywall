@@ -1,23 +1,13 @@
 .Q_ScrollAreaFader {
-  --Q_ScrollAreaFader-height: 36px;
-  --Q_ScrollAreaFader-top: -36px;
-
   position: absolute;
   width: 100%;
-  height: var(--Q_ScrollAreaFader-height, 36px);
-  top: var(--Q_ScrollAreaFader-top, -36px);
+  height: var(--Q_ScrollAreaFader-height);
+  top: var(--Q_ScrollAreaFader-top);
   left: 0;
   /* border-right: 1px solid var(--border-default, #e6e5e5); */
   background: linear-gradient(
     180deg,
-    var(--card-bg-default-transparent, rgba(255, 255, 255, 0)) 0%,
-    var(--card-bg-default, #fff) 50%
+    var(--card-bg-default-transparent) 0%,
+    var(--card-bg-default) 50%
   );
-}
-
-@media (max-width: 1280px) {
-  .Q_ScrollAreaFader {
-    --Q_ScrollAreaFader-height: 26px;
-    --Q_ScrollAreaFader-top: -26px;
-  }
 }

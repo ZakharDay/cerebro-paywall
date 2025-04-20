@@ -1,0 +1,11 @@
+:root {
+  --Q_Logo-width: 100px;
+  --Q_Logo-height: 40px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --Q_Logo-width: 80px;
+    --Q_Logo-height: 32px;
+  }
+}

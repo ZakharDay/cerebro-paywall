@@ -1,7 +1,4 @@
 .O_PayWallContentPaymentForm {
-  --O_PayWallContentPaymentForm-padding-top: 12px;
-  --O_PayWallContentPaymentForm-padding-bottom: 36px;
-
   display: flex;
   flex-direction: column;
   /* justify-content: stretch; */
@@ -11,12 +8,12 @@
   /* width: 680px; */
   /* height: 500px; */
 
-  padding: var(--O_PayWallContentPaymentForm-padding-top, 12px)
-    var(--S_PayWallWithPromo-padding-horizontal, 48px)
-    var(--O_PayWallContentPaymentForm-padding-bottom, 36px)
-    var(--S_PayWallWithPromo-padding-horizontal, 48px);
+  padding: var(--O_PayWallContentPaymentForm-padding-top)
+    var(--S_PayWallWithPromo-padding-horizontal)
+    var(--O_PayWallContentPaymentForm-padding-bottom)
+    var(--S_PayWallWithPromo-padding-horizontal);
 
-  gap: var(--S_PayWallWithPromo-gap, 48px);
+  gap: var(--S_PayWallWithPromo-gap);
   overflow-y: scroll;
 
   .M_TabBar {
@@ -26,7 +23,7 @@
     width: 100%;
 
     .O_EntityBar:not(:first-child) {
-      margin-top: var(--S_PayWallWithPromo-footer-padding-vertical, 12px);
+      margin-top: var(--S_PayWallWithPromo-footer-padding-vertical);
     }
   }
 
@@ -39,13 +36,6 @@
 
     flex-direction: column;
     align-items: center;
-    gap: var(--C_FormFields-gap, 28px);
-  }
-}
-
-@media (max-width: 1280px) {
-  .O_PayWallContentPaymentForm {
-    --O_PayWallContentPaymentForm-padding-top: 6px;
-    --O_PayWallContentPaymentForm-padding-bottom: 26px;
+    gap: var(--C_FormFields-gap);
   }
 }

@@ -1,0 +1,23 @@
+.S_NoticeBar {
+  display: flex;
+  align-items: center;
+  gap: var(--S_NoticeBar-gap);
+  width: 100vw;
+  height: var(--S_NoticeBar-height);
+  padding: 0 var(--S_NoticeBar-padding-horizontal);
+
+  &.alert {
+    border-bottom: 1px solid var(--danger);
+    background-color: var(--danger-light-background);
+
+    & > .Q_Icon::before {
+      content: '\ea05';
+      color: var(--danger);
+    }
+
+    .Q_NoticeBarText {
+      flex: 1 0 0;
+      color: var(--danger);
+    }
+  }
+}

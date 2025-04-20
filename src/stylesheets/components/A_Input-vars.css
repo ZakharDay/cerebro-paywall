@@ -1,0 +1,15 @@
+:root {
+  --A_Input-default-border-radius: 8px;
+  --A_Input-max_sum-gap: 12px;
+  --A_Input-padding-vertical: 16px;
+  --A_Input-padding-horizontal: 16px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --A_Input-default-border-radius: 8px;
+    --A_Input-max_sum-gap: 10px;
+    --A_Input-padding-vertical: 12px;
+    --A_Input-padding-horizontal: 12px;
+  }
+}

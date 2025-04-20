@@ -1,9 +1,4 @@
 .A_Input {
-  --A_Input-default-border-radius: 8px;
-  --A_Input-max_sum-gap: 12px;
-  --A_Input-padding-vertical: 16px;
-  --A_Input-padding-horizontal: 16px;
-
   width: 100%;
   height: 52px;
   padding: var(--A_Input-padding-vertical, 16px)
@@ -26,15 +21,6 @@
   }
 
   &::placeholder {
-    color: var(--form-input-placeholder, #989b9a);
-  }
-}
-
-@media (max-width: 1280px) {
-  .A_Input {
-    --A_Input-default-border-radius: 8px;
-    --A_Input-max_sum-gap: 10px;
-    --A_Input-padding-vertical: 12px;
-    --A_Input-padding-horizontal: 12px;
+    color: var(--form-input-placeholder);
   }
 }
