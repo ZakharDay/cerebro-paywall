@@ -82,6 +82,8 @@
   }
 
   &.modal {
+    overflow: hidden;
+
     .T_PayWallModal {
       display: flex;
     }
