@@ -72,6 +72,7 @@ module.exports = {
       }
     ]
   },
+
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
@@ -86,32 +87,38 @@ module.exports = {
       filename: './index.html',
       chunks: ['style_bundle']
     }),
+
+    // Navigation
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/view/pages/full.html',
-      filename: './pages/full.html',
+      template: './src/view/pages/navigation-cabinet.html',
+      filename: './pages/navigation-cabinet.html',
       chunks: ['style_bundle']
     }),
+
+    // Pay Wall
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/view/pages/no-scroll.html',
-      filename: './pages/no-scroll.html',
+      template: './src/view/pages/paywall-full.html',
+      filename: './pages/paywall-full.html',
       chunks: ['style_bundle']
     }),
+
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/view/pages/no-promo.html',
-      filename: './pages/no-promo.html',
+      template: './src/view/pages/paywall-no-scroll.html',
+      filename: './pages/paywall-no-scroll.html',
       chunks: ['style_bundle']
     }),
+
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/view/pages/layout.html',
-      filename: './pages/layout.html',
+      template: './src/view/pages/paywall-no-promo.html',
+      filename: './pages/paywall-no-promo.html',
       chunks: ['style_bundle']
     }),
 
@@ -124,6 +131,7 @@ module.exports = {
         priority: 'replace'
       }
     ]),
+
     new HtmlWebpackPartialsPlugin([
       {
         path: path.join(__dirname, './src/view/partials/S_NavigationBar.html'),
@@ -132,6 +140,7 @@ module.exports = {
         priority: 'replace'
       }
     ]),
+
     new HtmlWebpackPartialsPlugin([
       {
         path: path.join(__dirname, './src/view/partials/S_NoticeBar.html'),
@@ -140,6 +149,7 @@ module.exports = {
         priority: 'replace'
       }
     ]),
+
     new HtmlWebpackPartialsPlugin([
       {
         path: path.join(__dirname, './src/view/partials/S_SideBar.html'),
@@ -149,6 +159,7 @@ module.exports = {
       }
     ])
   ],
+
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
   }

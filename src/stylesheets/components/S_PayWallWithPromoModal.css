@@ -14,7 +14,7 @@
   /* shadow-modal */
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
 
-  .A_IconButton.close {
+  .A_IconButton {
     position: absolute;
     right: 8px;
     top: 8px;
