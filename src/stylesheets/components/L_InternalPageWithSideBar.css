@@ -38,9 +38,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-
     padding-top: var(--O_MenuBar-height);
-    /* padding-left: var(--S_SideBar-width, 280px); */
 
     padding-left: calc(
       var(--S_SideBar-width) +
@@ -53,10 +51,14 @@
 
     & > * {
       width: 100%;
-
       max-width: var(--W_InternalPageWithSideBarScrollArea-content-max-width);
+    }
 
-      /* margin: 0 auto; */
+    .C_Entities {
+      display: flex;
+      flex-direction: column;
+      gap: var(--C_Entities-gap);
+      padding: var(--C_Entities-gap) 0;
     }
   }
 
@@ -166,5 +168,24 @@
         }
       }
     }
+
+    /* .W_InternalPageWithSideBarScrollArea { */
+    /* .C_Entities { */
+
+    /* } */
+
+    .O_EntityBar {
+      /* display: block; */
+      flex-direction: column;
+      gap: 12px;
+
+      .W_CardContentLeft {
+      }
+
+      .W_CardContentRight {
+        justify-content: flex-start;
+      }
+    }
+    /* } */
   }
 }

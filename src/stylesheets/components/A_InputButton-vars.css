@@ -1,0 +1,9 @@
+:root {
+  --A_InputButton-top: 16px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --A_InputButton-top: 17px;
+  }
+}
