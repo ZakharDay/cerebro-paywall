@@ -5,11 +5,110 @@
   display: flex;
   width: 100%;
   height: 100%;
-  padding: var(--T_PayWallModal-padding-vertical) 0px;
+  padding: var(--T_PayWallModal-padding-vertical) 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-
+  /* flex-shrink: 0; */
   background: var(--modal-fader);
+}
+
+@media (max-width: 1193px) {
+  .T_PayWallModal {
+    display: block;
+    padding: 0;
+    height: 100%;
+
+    .S_PayWallWithPromoModal {
+      display: block;
+      /* flex-direction: column; */
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      padding: 0 0 136px 0;
+      border-radius: 0;
+      overflow-y: scroll;
+
+      .A_IconButton {
+        position: fixed;
+      }
+
+      .O_PayWallContent,
+      .O_PromoContent {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 24px;
+        border: 0;
+      }
+
+      .O_PayWallContent {
+        min-width: 320px;
+        padding-top: 48px;
+
+        .O_PayWallContentHeader {
+          margin-bottom: 24px;
+
+          .M_TitleWithDescription {
+            .A_Text {
+              text-align: center;
+            }
+          }
+        }
+
+        .O_PayWallContentPaymentForm {
+          padding: 0;
+
+          .M_TabBar {
+            width: 100%;
+            /* justify-content: center; */
+            overflow-y: scroll;
+
+            .A_TabButton {
+              flex: 1 0 auto;
+              text-wrap: nowrap;
+              text-align: center;
+            }
+          }
+
+          .C_FormFields {
+            width: 100%;
+          }
+        }
+
+        .O_PayWallContentActionBar {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          z-index: 2;
+          width: 100%;
+          padding-bottom: 24px;
+          background-color: var(--card-bg-default);
+        }
+      }
+
+      .O_PromoContent {
+        margin-top: 48px;
+
+        .W_PromoTextCenterizer {
+          overflow: visible;
+
+          .M_PayWallWithPromoText {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+          }
+        }
+
+        .W_PromoCodeCenterizer {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .T_PayWallModal {
+  }
 }

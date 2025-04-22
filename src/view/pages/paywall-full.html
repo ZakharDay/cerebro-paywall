@@ -6,10 +6,12 @@
     <title>Full Template</title>
   </head>
 
-  <body>
+  <body class="L_InternalPageWithSideBar modal">
     <div class="T_PayWallModal">
       <div class="S_PayWallWithPromoModal">
-        <div class="A_IconButton close"></div>
+        <div class="A_IconButton">
+          <div class="Q_Icon close"></div>
+        </div>
 
         <div class="O_PayWallContent">
           <div class="O_PayWallContentHeader">
@@ -45,9 +47,7 @@
                   <div class="C_TitleDescRow">
                     <div class="M_TitleWithDescription uiProperty">
                       <div class="A_Text uiLabel">Деньги</div>
-                      <div class="A_Text uiAccentTextMedium">
-                        1 844 390.12 ₽
-                      </div>
+                      <div class="A_Text uiAccentTextMedium">1 844 390.12 ₽</div>
                     </div>
 
                     <div class="M_TitleWithDescription uiProperty">
@@ -102,6 +102,103 @@
                   <div class="A_InputButton">макс. 1 844 390.12 ₽</div>
                 </div>
               </div>
+
+              <div class="M_FormField transfer">
+                <label class="A_Label">Сумма пополнения в рублях</label>
+
+                <div class="M_TransferInput">
+                  <input
+                    class="A_Input"
+                    type="text"
+                    placeholder="Введите сумму"
+                    value="100 ₽"
+                  />
+
+                  <div class="A_InputButton">макс. 1 844 390.12 ₽</div>
+                </div>
+              </div>
+
+              <div class="M_FormField transfer error">
+                <label class="A_Label">Сумма пополнения в рублях</label>
+
+                <div class="M_TransferInput">
+                  <input
+                    class="A_Input"
+                    type="text"
+                    placeholder="Введите сумму"
+                    value="10 000 000 ₽"
+                  />
+
+                  <div class="A_InputButton">макс. 1 844 390.12 ₽</div>
+                </div>
+
+                <div class="A_FormFieldMessage">
+                  Сумма не должна превышать доступный остаток
+                </div>
+              </div>
+
+              <div class="M_FormField transfer">
+                <label class="A_Label">Сумма пополнения в рублях</label>
+
+                <div class="M_TransferInput max">
+                  <input
+                    class="A_Input"
+                    type="text"
+                    placeholder="Введите сумму"
+                    value="1 844 390.12 ₽"
+                  />
+
+                  <div class="A_InputButton">макс. 1 844 390.12 ₽</div>
+                </div>
+              </div>
+
+              <div class="M_FormField transfer">
+                <label class="A_Label">
+                  Поступит на баланс кабинета после вычета НДС
+                </label>
+
+                <div class="M_TransferInput">
+                  <input
+                    class="A_Input"
+                    type="text"
+                    placeholder="Введите сумму"
+                    value="10 000 000 ₽"
+                  />
+
+                  <div class="A_InputButton">макс. 1 744 390.12 ₽</div>
+                </div>
+              </div>
+
+              <div class="M_FormField">
+                <label class="A_Label">Сумма пополнения в рублях</label>
+
+                <input
+                  class="A_Input"
+                  type="text"
+                  placeholder="Введите сумму"
+                />
+              </div>
+
+              <div class="M_FormField">
+                <label class="A_Label">Сумма пополнения в рублях</label>
+
+                <input
+                  class="A_Input"
+                  type="text"
+                  placeholder="Введите сумму"
+                  value="10 000 000 ₽"
+                />
+              </div>
+
+              <div class="M_FormField">
+                <label class="A_Label">Комментарий</label>
+                <textarea class="A_TextArea" placeholder="Оставьте комментарий"></textarea>
+              </div>
+
+              <div class="M_FormField">
+                <label class="A_Label">Комментарий</label>
+                <textarea class="A_TextArea" placeholder="Оставьте комментарий">Можете зачислить побыстрей?</textarea>
+              </div>
             </div>
           </div>
 
@@ -110,6 +207,7 @@
               <div class="A_Button primary">Пополнить с баланса клиента</div>
 
               <div class="M_ButtonSet">
+                <div class="A_Button secondary">Скопировать ссылку на оплату</div>
                 <div class="A_Button secondary muted">Отменить</div>
               </div>
             </div>
@@ -121,7 +219,7 @@
         <div class="O_PromoContent">
           <div class="W_PromoTextCenterizer">
             <div class="W_PromoTextScrollArea">
-              <div class="M_PayWallWithPromoPromoText">
+              <div class="M_PayWallWithPromoText">
                 <div class="Q_Logo"></div>
 
                 <h1>Рекламная акция</h1>

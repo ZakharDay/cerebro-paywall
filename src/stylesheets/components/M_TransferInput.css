@@ -17,7 +17,7 @@
 
   .A_InputButton {
     position: absolute;
-    top: var(--A_Input-padding-vertical);
+    top: var(--A_InputButton-top);
     right: var(--A_Input-padding-horizontal);
   }
 }
