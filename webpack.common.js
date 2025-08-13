@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 const webpack = require('webpack')
 const path = require('path')
@@ -12,8 +13,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'docs')
-    // clean: true
+    path: path.resolve(__dirname, 'docs'),
+    clean: true
   },
   module: {
     rules: [
@@ -23,38 +24,14 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@babel/plugin-proposal-class-properties']
+            presets: ['@babel/preset-env']
           }
         }
       },
       {
-        test: /\.(sa|sc|c)ss$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
-      },
-      // {
-      //   test: /\.(sa|sc|c)ss$/i,
-      //   use: [
-      //     MiniCssExtractPlugin.loader,
-      //     'css-loader',
-      //     {
-      //       loader: 'postcss-loader',
-      //       options: {
-      //         postcssOptions: {
-      //           plugins: [['postcss-preset-env']]
-      //         }
-      //       }
-      //     },
-      //     'sass-loader'
-      //   ]
-      // },
-      {
-        test: /\.html$/i,
-        loader: 'html-loader'
-      },
-      {
-        resourceQuery: /raw/,
-        type: 'asset/source'
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
@@ -65,19 +42,16 @@ module.exports = {
       },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]'
         }
       }
     ]
   },
 
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
-    }),
+    new MiniCssExtractPlugin(),
 
     // Landing page
     new HtmlWebpackPlugin({
@@ -169,8 +143,12 @@ module.exports = {
       }
     ])
   ],
-
   optimization: {
-    minimizer: [new CssMinimizerPlugin()]
+    minimizer: [new TerserPlugin(), new CssMinimizerPlugin()]
+  },
+  resolve: {
+    fallback: {
+      stream: require.resolve('stream-browserify')
+    }
   }
 }

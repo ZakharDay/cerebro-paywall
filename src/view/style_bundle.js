@@ -17,13 +17,17 @@ function init_S_SideBar_mobile() {
   const openButton = document.querySelector('.O_MenuBar .A_IconButton')
   const closeButton = document.querySelector('.O_SideBarHome .A_IconButton')
 
-  openButton.addEventListener('click', () => {
-    document.body.classList.add('menu')
-  })
+  if (openButton) {
+    openButton.addEventListener('click', () => {
+      document.body.classList.add('menu')
+    })
+  }
 
-  closeButton.addEventListener('click', () => {
-    document.body.classList.remove('menu')
-  })
+  if (closeButton) {
+    closeButton.addEventListener('click', () => {
+      document.body.classList.remove('menu')
+    })
+  }
 }
 
 function init_O_EntityBar() {
