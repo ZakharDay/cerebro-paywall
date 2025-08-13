@@ -16,19 +16,51 @@
     box-shadow: 0px 4px 4px 0px var(--shadow-accent);
   }
 
+  &.folder {
+    .W_CardContentLeft {
+      padding-left: calc(36px + 12px);
+    }
+
+    &.opened {
+      .W_CardContentLeft {
+        .A_ToggleOpenBarButton {
+          .Q_Icon {
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+
+  &.iconButton {
+    .W_CardContentRight {
+      padding-right: calc(36px + 12px);
+
+      .A_IconButton {
+        position: absolute;
+        top: 2px;
+        right: 0;
+      }
+    }
+  }
+
   .W_CardContentLeft {
+    position: relative;
+    flex: 1 0 0;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
     gap: var(--O_EntityBar-gap);
-    flex: 1 0 0;
+    overflow-x: auto;
   }
 
   .W_CardContentRight {
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     gap: var(--O_EntityBar-gap);
 
     /* .C_TitleDescRow {
@@ -42,5 +74,25 @@
     display: flex;
     align-items: flex-start;
     gap: var(--O_EntityBar-gap, 24px);
+  }
+}
+
+@media (max-width: 767px) {
+  .O_EntityBar {
+    &.iconButton {
+      .W_CardContentLeft {
+        padding-right: calc(36px + 12px);
+      }
+
+      .W_CardContentRight {
+        .A_IconButton {
+          top: -46px;
+        }
+      }
+    }
+
+    .W_CardContentLeft {
+      overflow: visible;
+    }
   }
 }

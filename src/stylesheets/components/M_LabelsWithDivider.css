@@ -4,4 +4,16 @@
   gap: var(--M_LabelsWithDivider-gap);
   width: 100%;
   color: var(--text-secondary);
+  overflow-x: auto;
+
+  .A_Text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    max-width: 500px;
+
+    &:last-child {
+      flex: 1 1 0;
+    }
+  }
 }

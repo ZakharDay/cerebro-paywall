@@ -26,7 +26,23 @@ function init_S_SideBar_mobile() {
   })
 }
 
+function init_O_EntityBar() {
+  const entityBars = document.getElementsByClassName('O_EntityBar')
+
+  for (let index = 0; index < entityBars.length; index++) {
+    const entityBar = entityBars[index]
+    const toggleOpenButton = entityBar.querySelector('.A_ToggleOpenBarButton')
+
+    if (toggleOpenButton) {
+      toggleOpenButton.addEventListener('click', () => {
+        entityBar.classList.toggle('opened')
+      })
+    }
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   init_S_NoticeBar()
   init_S_SideBar_mobile()
+  init_O_EntityBar()
 })

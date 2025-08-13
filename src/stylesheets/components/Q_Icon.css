@@ -30,4 +30,8 @@
   &.burger::before {
     content: '\ec42';
   }
+
+  &.dots::before {
+    content: '\ea95';
+  }
 }

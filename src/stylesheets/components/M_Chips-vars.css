@@ -1,0 +1,9 @@
+:root {
+  --M_Chips-gap: 8px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --M_Chips-gap: 6px;
+  }
+}

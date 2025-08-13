@@ -157,6 +157,16 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        // prettier-ignore
+        path: path.join(__dirname, './src/view/partials/T_EntityBarsFolders.html'),
+        location: 'T_EntityBarsFolders',
+        template_filename: '*',
+        priority: 'replace'
+      }
     ])
   ],
 

@@ -6,6 +6,8 @@
 
   /* Context based */
   &.uiProperty {
+    overflow-x: auto;
+
     .A_Text {
       &:first-child {
         color: var(--text-secondary);
@@ -26,6 +28,13 @@
         font-weight: 700;
         line-height: var(--ui-accent-text-medium-line-height, 20px); */
       }
+    }
+
+    & > .A_Text {
+      text-wrap: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
     }
   }
 }

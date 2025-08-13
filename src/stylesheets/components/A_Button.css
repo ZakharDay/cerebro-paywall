@@ -7,6 +7,7 @@
   font-size: var(--ui-button-text-default-font-size);
   font-weight: 500;
   line-height: var(--ui-button-text-default-line-height);
+  text-wrap: nowrap;
 
   &.primary {
     cursor: pointer;
