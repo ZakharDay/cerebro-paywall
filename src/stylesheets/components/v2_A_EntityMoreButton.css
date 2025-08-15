@@ -15,7 +15,7 @@
   align-items: center;
 
   /* v2 EXTRA */
-  background-color: var(--v2-icon-button-background);
+  /* background-color: var(--v2-icon-button-background); */
 
   transition: all 0.1s ease-in-out;
 
@@ -44,7 +44,7 @@
 
   /* v2 EXTRA */
 
-  &:hover {
+  /* &:hover {
     background-color: var(--v2-icon-button-background-hover);
-  }
+  } */
 }

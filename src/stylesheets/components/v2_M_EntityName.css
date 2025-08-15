@@ -16,9 +16,9 @@
     transition: all 0.1s ease-in-out;
 
     /* v2 EXTRA */
-    &:hover {
+    /* &:hover {
       color: var(--v2-text-color-hover);
-    }
+    } */
   }
 
   a.A_Text {
@@ -26,8 +26,8 @@
     text-decoration: none;
 
     /* v2 EXTRA */
-    &:hover {
+    /* &:hover {
       color: var(--interactive-hover);
-    }
+    } */
   }
 }
