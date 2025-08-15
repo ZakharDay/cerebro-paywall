@@ -14,7 +14,7 @@
   border: 2px solid var(--border-default);
 
   /* v2 EXTRA */
-  background-color: var(--v2-icon-button-background);
+  /* background-color: var(--v2-icon-button-background); */
 
   transition: all 0.1s ease-in-out;
 
@@ -45,10 +45,10 @@
 
   /* v2 EXTRA */
 
-  &:hover {
+  /* &:hover {
     background-color: var(--v2-icon-button-background-hover);
     box-shadow: 0 0 4px 0 var(--v2-glow-default);
-  }
+  } */
 }
 
 @media (max-width: 1023px) {

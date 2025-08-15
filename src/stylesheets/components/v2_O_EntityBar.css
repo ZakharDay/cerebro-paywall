@@ -71,11 +71,11 @@
 
     /* v2 EXTRA */
 
-    &:hover {
+    /* &:hover {
       background: var(--card-bg-hover);
       border: 1px solid var(--v2-card-border-hover);
       box-shadow: 0 4px 4px 0 var(--v2-card-shadow-hover);
-    }
+    } */
   }
 
   .C_TitleDescRow {
