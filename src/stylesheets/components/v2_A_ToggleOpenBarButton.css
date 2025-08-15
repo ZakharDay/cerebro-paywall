@@ -1,0 +1,112 @@
+.v2_A_ToggleOpenBarButton {
+  cursor: pointer;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  max-width: 36px;
+  border-radius: 18px;
+  border: 2px solid var(--border-default);
+
+  /* v2 EXTRA */
+  background-color: var(--v2-icon-button-background);
+
+  transition: all 0.1s ease-in-out;
+
+  .A_Text {
+    display: none;
+  }
+
+  &::before {
+    width: var(--Q_Icon-width);
+    min-width: var(--Q_Icon-width);
+    height: var(--Q_Icon-height);
+    font-family: 'tabler-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    display: block;
+    text-align: center;
+    font-size: var(--Q_Icon-font-size);
+    color: var(--icon-default);
+
+    content: '\ea61';
+    transition: all 0.3s ease;
+  }
+
+  /* v2 EXTRA */
+
+  &:hover {
+    background-color: var(--v2-icon-button-background-hover);
+    box-shadow: 0 0 4px 0 var(--v2-glow-default);
+  }
+}
+
+@media (max-width: 1023px) {
+  .v2_A_ToggleOpenBarButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    width: auto;
+    height: auto;
+    min-width: auto;
+    max-width: 100%;
+
+    border-radius: 0;
+    border: none;
+    background-color: initial;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      width: 18px;
+      min-width: 18px;
+      height: 18px;
+      font-family: 'tabler-icons' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      color: var(--icon-default);
+
+      content: '\ea5f';
+      transition: all 0.3s ease;
+    }
+
+    .A_Text {
+      display: block;
+
+      font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+
+      &:first-child {
+        color: var(--text-primary);
+      }
+
+      &:last-child {
+        color: var(--text-muted);
+        text-transform: lowercase;
+      }
+    }
+  }
+}

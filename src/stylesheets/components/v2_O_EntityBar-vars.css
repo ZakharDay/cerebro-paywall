@@ -1,0 +1,13 @@
+:root {
+  --O_EntityBar-padding: 23px;
+  --O_EntityBar-padding-extended: 47px;
+  --O_EntityBar-gap: 24px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --O_EntityBar-padding: 20px;
+    --O_EntityBar-padding-extended: 46px;
+    --O_EntityBar-gap: 20px;
+  }
+}

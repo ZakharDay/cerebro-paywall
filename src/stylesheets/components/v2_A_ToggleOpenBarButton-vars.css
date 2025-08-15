@@ -1,0 +1,11 @@
+:root {
+  --A_ToggleOpenButton-padding-horizontal: 4px;
+  --A_ToggleOpenButton-padding-vertical: 4px;
+}
+
+@media (max-width: 1535px) {
+  :root {
+    --A_ToggleOpenButton-padding-horizontal: 4px;
+    --A_ToggleOpenButton-padding-vertical: 4px;
+  }
+}

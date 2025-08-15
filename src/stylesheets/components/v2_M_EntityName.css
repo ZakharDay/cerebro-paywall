@@ -1,0 +1,33 @@
+.v2_M_EntityName {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--v2_M_EntityName-gap);
+  width: 100%;
+
+  /* ui-accent-text-medium */
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-size: var(--ui-accent-text-medium-font-size);
+  line-height: var(--ui-accent-text-medium-line-height);
+  font-weight: 700;
+
+  .A_Text {
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: all 0.1s ease-in-out;
+
+    /* v2 EXTRA */
+    &:hover {
+      color: var(--v2-text-color-hover);
+    }
+  }
+
+  a.A_Text {
+    color: var(--interactive-initial);
+    text-decoration: none;
+
+    /* v2 EXTRA */
+    &:hover {
+      color: var(--interactive-hover);
+    }
+  }
+}

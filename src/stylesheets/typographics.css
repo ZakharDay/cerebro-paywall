@@ -1,9 +1,9 @@
-.uiChipText {
+/* .uiChipText {
   font-size: 10px;
   line-height: 13px;
   font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
   font-weight: 500;
-}
+} */
 
 .uiLabel {
   font-size: var(--ui-label-font-size);

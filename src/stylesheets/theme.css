@@ -39,6 +39,14 @@
   --tab-bar-inactive-background: #f1f1f1;
   --tab-bar-active-background: #ffffff;
   --tab-bar-hover-background: #e4e7e6;
+
+  --v2-icon-button-background: #2f2f32;
+  --v2-icon-button-background-hover: #37373a;
+  --v2-text-color-hover: #c6d7ea;
+  --v2-glow-default: rgba(255, 255, 255, 0.5);
+  --v2-card-border-hover: #1a1a1a;
+  --v2-card-shadow-hover: rgba(0, 0, 0, 0.3);
+  --card-bg-hover: #212124;
 }
 
 /* Dark */

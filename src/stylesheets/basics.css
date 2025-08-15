@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -11,5 +13,5 @@ body {
 body {
   font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
   font-weight: 400;
-  background: var(--body-bg, #fbfaf9);
+  background: var(--body-bg);
 }

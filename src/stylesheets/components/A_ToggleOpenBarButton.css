@@ -1,0 +1,22 @@
+.A_ToggleOpenBarButton {
+  cursor: pointer;
+
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: var(--A_ToggleOpenButton-padding-vertical)
+    var(--A_ToggleOpenButton-padding-horizontal);
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 18px;
+  border: 2px solid var(--border-default);
+
+  .Q_Icon {
+    transition: all 0.3s ease;
+  }
+}

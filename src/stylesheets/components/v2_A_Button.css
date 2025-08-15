@@ -1,4 +1,4 @@
-.A_Button {
+.v2_A_Button {
   display: inline-block;
   text-decoration: none;
 
@@ -37,6 +37,35 @@
   }
 
   &.secondary {
+    cursor: pointer;
+
+    padding: var(--v2_A_Button-secondary-padding-vertical)
+      var(--v2_A_Button-secondary-padding-horizontal);
+
+    border-radius: var(--A_Button-primary_default-border-radius);
+    border: 1px solid var(--interactive-initial);
+    background: var(--card-bg-default);
+
+    color: var(--interactive-initial);
+    text-align: center;
+
+    &:hover {
+      color: var(--interactive-hover);
+      border: 1px solid var(--interactive-hover);
+    }
+
+    .disabled {
+      cursor: not-allowed;
+      color: var(--interactive-disabled);
+      border: 1px solid var(--interactive-disabled);
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &.tertiary {
     cursor: pointer;
 
     color: var(--interactive-initial);

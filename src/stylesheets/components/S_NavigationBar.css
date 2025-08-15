@@ -1,3 +1,4 @@
 .S_NavigationBar {
   background: var(--body-bg);
+  z-index: 1;
 }

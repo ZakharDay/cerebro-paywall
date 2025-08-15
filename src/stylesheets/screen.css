@@ -20,7 +20,6 @@
   --ui-tab-button-text-line-height: 24px;
   --ui-chip-text-font-size: 10px;
   --ui-chip-text-line-height: 13px;
-  --ui-chip-border-radius: 4px;
   --ui-label-font-size: 12px;
   --ui-label-line-height: 16px;
   --ui-accent-text-medium-font-size: 16px;
@@ -35,8 +34,7 @@
   --C_FormFields-gap: 28px;
   --C_Entities-gap: 12px;
 
-  /* --A_ToggleOpenButton-padding-horizontal: 4px;
-  --A_ToggleOpenButton-padding-vertical: 4px;
+  /*
 
   --A_Input-text_compact-padding-vertical: 16px;
   --A_Input-text_compact-padding-horizontal: 10px;
@@ -79,7 +77,6 @@
     --ui-tab-button-text-line-height: 22px;
     --ui-chip-text-font-size: 10px;
     --ui-chip-text-line-height: 11px;
-    --ui-chip-border-radius: 4px;
     --ui-label-font-size: 10px;
     --ui-label-line-height: 14px;
     --ui-accent-text-medium-font-size: 14px;
