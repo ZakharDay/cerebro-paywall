@@ -42,6 +42,21 @@
 
 @import '../stylesheets/components/L_InternalPageWithSideBar-vars.css';
 
+/*  */
+/*  */
+/*  */
+
+@import '../stylesheets/components/v2_A_EntityMoreButton-vars.css';
+@import '../stylesheets/components/v2_A_Button-vars.css';
+@import '../stylesheets/components/v2_A_ToggleOpenBarButton-vars.css';
+@import '../stylesheets/components/v2_M_EntityName-vars.css';
+@import '../stylesheets/components/v2_M_EntityTitleWithDescription-vars.css';
+@import '../stylesheets/components/v2_O_EntityBar-vars.css';
+
+/*  */
+/*  */
+/*  */
+
 /* End Vars */
 
 /* Basics */
@@ -105,5 +120,24 @@
 @import '../stylesheets/components/T_PayWallModal.css';
 
 @import '../stylesheets/components/L_InternalPageWithSideBar.css';
+
+/*  */
+/*  */
+/*  */
+
+@import '../stylesheets/components/v2_A_InfoButton.css';
+@import '../stylesheets/components/v2_A_EntityMoreButton.css';
+@import '../stylesheets/components/v2_A_Button.css';
+@import '../stylesheets/components/v2_A_EntityFavButton.css';
+@import '../stylesheets/components/v2_A_ToggleOpenBarButton.css';
+@import '../stylesheets/components/v2_M_EntityName.css';
+@import '../stylesheets/components/v2_M_EntityTitleWithDescription.css';
+@import '../stylesheets/components/v2_O_EntityBar.css';
+@import '../stylesheets/components/v2_T_EntityBarsFolders.css';
+@import '../stylesheets/components/v2_L_InternalPageWithSideBar.css';
+
+/*  */
+/*  */
+/*  */
 
 /* End Components */

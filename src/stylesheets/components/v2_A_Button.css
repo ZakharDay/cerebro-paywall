@@ -1,0 +1,86 @@
+.v2_A_Button {
+  display: inline-block;
+  text-decoration: none;
+
+  /* ui-button-text-default */
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-size: var(--ui-button-text-default-font-size);
+  font-weight: 500;
+  line-height: var(--ui-button-text-default-line-height);
+  text-wrap: nowrap;
+
+  &.primary {
+    cursor: pointer;
+
+    padding: var(--A_Button-primary_default-padding-vertical)
+      var(--A_Button-primary_default-padding-horizontal);
+
+    border-radius: var(--A_Button-primary_default-border-radius);
+    background: var(--interactive-initial);
+
+    color: var(--text-inverted);
+    text-align: center;
+
+    &:hover {
+      background: var(--interactive-hover);
+    }
+
+    .disabled {
+      cursor: not-allowed;
+      background: var(--interactive-disabled);
+
+      &:hover {
+        cursor: not-allowed;
+        background: var(--interactive-disabled);
+      }
+    }
+  }
+
+  &.secondary {
+    cursor: pointer;
+
+    padding: var(--v2_A_Button-secondary-padding-vertical)
+      var(--v2_A_Button-secondary-padding-horizontal);
+
+    border-radius: var(--A_Button-primary_default-border-radius);
+    border: 1px solid var(--interactive-initial);
+    background: var(--card-bg-default);
+
+    color: var(--interactive-initial);
+    text-align: center;
+
+    &:hover {
+      color: var(--interactive-hover);
+      border: 1px solid var(--interactive-hover);
+    }
+
+    .disabled {
+      cursor: not-allowed;
+      color: var(--interactive-disabled);
+      border: 1px solid var(--interactive-disabled);
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &.tertiary {
+    cursor: pointer;
+
+    color: var(--interactive-initial);
+    text-align: center;
+
+    &:hover {
+      color: var(--interactive-hover);
+    }
+
+    &.muted {
+      color: var(--text-muted);
+
+      &:hover {
+        color: var(--text-muted);
+      }
+    }
+  }
+}

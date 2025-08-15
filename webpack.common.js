@@ -62,6 +62,15 @@ module.exports = {
       chunks: ['style_bundle']
     }),
 
+    // Clients & Cabinets
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/view/pages/v2-navigation-cabinet.html',
+      filename: './pages/v2-navigation-cabinet.html',
+      chunks: ['style_bundle']
+    }),
+
     // Navigation
     new HtmlWebpackPlugin({
       hash: true,
@@ -138,6 +147,16 @@ module.exports = {
         // prettier-ignore
         path: path.join(__dirname, './src/view/partials/T_EntityBarsFolders.html'),
         location: 'T_EntityBarsFolders',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        // prettier-ignore
+        path: path.join(__dirname, './src/view/partials/v2_T_EntityBarsFolders.html'),
+        location: 'v2_T_EntityBarsFolders',
         template_filename: '*',
         priority: 'replace'
       }
