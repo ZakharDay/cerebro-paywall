@@ -4,7 +4,7 @@
   --O_MenuBar-padding-horizontal: 40px;
 }
 
-@media (max-width: 1535px) {
+@media (max-width: 1500px) {
   :root {
     --O_MenuBar-height: 48px;
     --O_MenuBar-padding-vertical: 14px;

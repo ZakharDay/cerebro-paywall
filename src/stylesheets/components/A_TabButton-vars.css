@@ -4,7 +4,7 @@
   --A_TabButton-border-radius: 4px;
 }
 
-@media (max-width: 1535px) {
+@media (max-width: 1500px) {
   :root {
     --A_TabButton-padding-horizontal: 16px;
     --A_TabButton-padding-vertical: 12px;

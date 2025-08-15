@@ -2,7 +2,7 @@
   --T_PayWallModal-padding-vertical: 40px;
 }
 
-@media (max-width: 1535px) {
+@media (max-width: 1500px) {
   :root {
     --T_PayWallModal-padding-vertical: 30px;
   }
