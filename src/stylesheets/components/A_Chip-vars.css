@@ -4,7 +4,7 @@
   --A_Chip-border-radius: 4px;
 }
 
-@media (max-width: 1535px) {
+@media (max-width: 1500px) {
   :root {
     --A_Chip-padding-vertical: 6px;
     --A_Chip-padding-horizontal: 4px;

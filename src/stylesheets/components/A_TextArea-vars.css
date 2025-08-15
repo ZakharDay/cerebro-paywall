@@ -3,7 +3,7 @@
   --A_TextArea-padding: 16px;
 }
 
-@media (max-width: 1535px) {
+@media (max-width: 1500px) {
   :root {
     --A_TextArea-border-radius: 8px;
     --A_TextArea-padding: 12px;

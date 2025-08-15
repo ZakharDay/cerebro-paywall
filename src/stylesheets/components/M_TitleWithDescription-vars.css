@@ -3,7 +3,7 @@
   --M_TitleWithDescription-ui_property-gap: 4px;
 }
 
-@media (max-width: 1535px) {
+@media (max-width: 1500px) {
   :root {
     --M_TitleWithDescription-column_display_h3_p2-gap: 10px;
     --M_TitleWithDescription-ui_property-gap: 4px;
