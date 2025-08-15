@@ -2,7 +2,7 @@
   --M_CabinetNameWithId-gap: 6px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --M_CabinetNameWithId-gap: 6px;
   }

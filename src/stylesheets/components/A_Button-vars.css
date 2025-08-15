@@ -12,7 +12,7 @@
   --A_Button-secondary-default-padding-horizontal: 6px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --A_Button-primary_default-padding-vertical: 10px;
     --A_Button-primary_default-padding-horizontal: 24px;

@@ -4,7 +4,7 @@
   --O_EntityBar-gap: 24px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --O_EntityBar-padding: 20px;
     --O_EntityBar-padding-extended: 46px;

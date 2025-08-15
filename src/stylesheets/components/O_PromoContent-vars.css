@@ -2,7 +2,7 @@
   --O_PromoContent-width: 600px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --O_PromoContent-width: 520px;
   }

@@ -2,7 +2,7 @@
   --M_Chips-gap: 8px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --M_Chips-gap: 6px;
   }
