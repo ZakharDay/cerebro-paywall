@@ -5,7 +5,7 @@
   --C_SideBarMenu-gap: 18px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --S_SideBar-width: 224px;
     --W_SideBarMenuContent-padding-vertical: 30px;

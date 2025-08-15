@@ -5,7 +5,7 @@
   --A_Input-padding-horizontal: 16px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --A_Input-default-border-radius: 8px;
     --A_Input-max_sum-gap: 10px;

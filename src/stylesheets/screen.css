@@ -55,7 +55,7 @@
 }
 
 /* Small Desktop */
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --ui-heading-1-font-size: 22px;
     --ui-heading-1-line-height: 28px;

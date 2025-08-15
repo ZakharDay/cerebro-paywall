@@ -3,7 +3,7 @@
   --Q_Logo-height: 40px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --Q_Logo-width: 80px;
     --Q_Logo-height: 32px;

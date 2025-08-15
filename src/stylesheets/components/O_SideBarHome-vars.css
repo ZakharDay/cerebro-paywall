@@ -3,7 +3,7 @@
   --O_SideBarHome-padding-horizontal: 28px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --O_SideBarHome-height: 48px;
     --O_SideBarHome-padding-horizontal: 22px;

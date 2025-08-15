@@ -6,7 +6,7 @@
   --S_PayWallWithPromo-gap: 48px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --S_PayWallWithPromo-max-height: 646px;
     --S_PayWallWithPromo-padding-horizontal: 38px;

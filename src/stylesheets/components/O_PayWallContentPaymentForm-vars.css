@@ -3,7 +3,7 @@
   --O_PayWallContentPaymentForm-padding-bottom: 36px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --O_PayWallContentPaymentForm-padding-top: 6px;
     --O_PayWallContentPaymentForm-padding-bottom: 26px;

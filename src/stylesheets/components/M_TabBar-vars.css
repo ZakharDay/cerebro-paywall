@@ -3,7 +3,7 @@
   --M_TabBar-border-radius: 8px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --M_TabBar-padding: 4px;
     --M_TabBar-border-radius: 8px;

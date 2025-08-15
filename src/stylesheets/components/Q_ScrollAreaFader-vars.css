@@ -3,7 +3,7 @@
   --Q_ScrollAreaFader-top: -36px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --Q_ScrollAreaFader-height: 26px;
     --Q_ScrollAreaFader-top: -26px;

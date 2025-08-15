@@ -2,7 +2,7 @@
   --O_PayWallContentHeader: 12px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1536px) {
   :root {
     --O_PayWallContentHeader: 6px;
   }
