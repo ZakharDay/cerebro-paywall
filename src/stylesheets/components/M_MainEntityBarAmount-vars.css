@@ -1,0 +1,15 @@
+:root {
+  --M_MainEntityBarAmount-gap: 4px;
+}
+
+/* @media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --M_MainEntityBarAmount-gap: 4px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --M_MainEntityBarAmount-gap: 4px;
+  }
+} */

@@ -11,3 +11,16 @@
     --A_Chip-border-radius: 4px;
   }
 }
+
+:root {
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+  }
+}

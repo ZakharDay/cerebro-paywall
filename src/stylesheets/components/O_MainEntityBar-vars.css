@@ -1,0 +1,46 @@
+:root {
+  --O_MainEntityBar-gap: 12px;
+  --O_MainEntityBar-padding: 24px;
+  --O_MainEntityBar-border-radius: 8px;
+  --W_MainEntityBarContent-gap: 24px;
+  --W_MainEntityBarContentLeft-gap: 12px;
+  --W_MainEntityBarContentLeft-padding-bottom: 0px;
+  --W_MainEntityBarContentCenter-gap: 8px;
+  --W_MainEntityBarContentCenter-padding-bottom: 0px;
+  --W_MainEntityBarContentCenter-last-child-padding-bottom: 0px;
+  --W_MainEntityBarContentRight-gap: 24px;
+  --W_MainEntityBarContentRight-padding-top: 0px;
+  --C_MainEntityBarAmountRow-gap: 24px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --O_MainEntityBar-gap: 10px;
+    --O_MainEntityBar-padding: 20px;
+    --O_MainEntityBar-border-radius: 8px;
+    --W_MainEntityBarContent-gap: 20px;
+    --W_MainEntityBarContentLeft-gap: 10px;
+    --W_MainEntityBarContentLeft-padding-bottom: 0px;
+    --W_MainEntityBarContentCenter-gap: 6px;
+    --W_MainEntityBarContentCenter-padding-bottom: 0px;
+    --W_MainEntityBarContentCenter-last-child-padding-bottom: 0px;
+    --W_MainEntityBarContentRight-gap: 20px;
+    --W_MainEntityBarContentRight-padding-top: 0px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --O_MainEntityBar-gap: 10px;
+    --O_MainEntityBar-padding: 16px;
+    --O_MainEntityBar-border-radius: 8px;
+    --W_MainEntityBarContent-gap: 24px;
+    --W_MainEntityBarContentLeft-gap: 12px;
+    --W_MainEntityBarContentLeft-padding-bottom: 4px;
+    --W_MainEntityBarContentCenter-gap: 0px;
+    --W_MainEntityBarContentCenter-padding-bottom: 4px;
+    --W_MainEntityBarContentCenter-last-child-padding-bottom: 6px;
+    --W_MainEntityBarContentRight-gap: 16px;
+    --W_MainEntityBarContentRight-padding-top: 8px;
+  }
+}

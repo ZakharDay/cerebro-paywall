@@ -1,6 +1,7 @@
 :root {
-  --A_Button-primary_default-padding-vertical: 10px;
-  --A_Button-primary_default-padding-horizontal: 24px;
+  --v2_A_Button-secondary-padding-vertical: 9px;
+  --v2_A_Button-secondary-padding-horizontal: 23px;
+
   --A_Button-primary_default-border-radius: 4px;
   --A_Button-primary_large-padding-vertical: 16px;
   --A_Button-primary_large-padding-horizontal: 38px;
@@ -25,5 +26,18 @@
     --A_Button-secondary_icon-border-radius: 4px;
     --A_Button-secondary-default-padding-vertical: 0px;
     --A_Button-secondary-default-padding-horizontal: 0px;
+  }
+}
+
+:root {
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
   }
 }

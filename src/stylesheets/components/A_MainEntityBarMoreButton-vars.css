@@ -1,0 +1,15 @@
+:root {
+  --A_MainEntityBarMoreButton-size: 36px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --A_MainEntityBarMoreButton-size: 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --A_MainEntityBarMoreButton-size: 36px;
+  }
+}

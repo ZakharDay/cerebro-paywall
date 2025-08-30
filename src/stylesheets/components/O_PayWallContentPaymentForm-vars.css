@@ -1,11 +1,13 @@
 :root {
   --O_PayWallContentPaymentForm-padding-top: 12px;
   --O_PayWallContentPaymentForm-padding-bottom: 36px;
+  --C_FormFields-gap: 28px;
 }
 
 @media (max-width: 1536px) {
   :root {
     --O_PayWallContentPaymentForm-padding-top: 6px;
     --O_PayWallContentPaymentForm-padding-bottom: 26px;
+    --C_FormFields-gap: 22px;
   }
 }

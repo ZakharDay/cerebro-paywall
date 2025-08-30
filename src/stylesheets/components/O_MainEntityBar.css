@@ -1,0 +1,216 @@
+.O_MainEntityBar {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--O_MainEntityBar-gap);
+  padding: var(--O_MainEntityBar-padding);
+  border-radius: var(--O_MainEntityBar-border-radius);
+
+  border: var(--border-width) solid var(--border-default);
+  background: var(--card-bg-default);
+  box-shadow: 0px 4px 4px 0px var(--shadow-default);
+  transition: all 0.3s ease-in-out;
+
+  .W_MainEntityBarContent {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: var(--W_MainEntityBarContent-gap);
+    width: 100%;
+
+    .W_MainEntityBarContentLeft {
+      flex: 1 0 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--W_MainEntityBarContentLeft-gap);
+      overflow-x: auto;
+    }
+
+    .W_MainEntityBarContentCenter {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: var(--W_MainEntityBarContentCenter-gap);
+    }
+
+    .W_MainEntityBarContentRight {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: var(--W_MainEntityBarContentRight-gap);
+    }
+  }
+
+  &.accent {
+    border: var(--border-width) solid var(--border-accent);
+    background: var(--card-bg-accent);
+    box-shadow: 0px 4px 4px 0px var(--shadow-accent);
+
+    .M_InfoMark,
+    .A_MainEntityBarToggleButton {
+      background-color: var(--card-bg-accent);
+    }
+  }
+
+  &.folder {
+    .W_MainEntityBarContent {
+      width: calc(100% - 36px - 12px);
+    }
+
+    &.opened {
+      .A_MainEntityBarToggleButton::before {
+        transform: rotate(90deg);
+      }
+    }
+
+    /* v2 EXTRA */
+
+    /* &:hover {
+      background: var(--card-bg-hover);
+      border: 1px solid var(--v2-card-border-hover);
+      box-shadow: 0 4px 4px 0 var(--v2-card-shadow-hover);
+    } */
+  }
+
+  .C_MainEntityBarAmountRow {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--C_MainEntityBarAmountRow-gap);
+  }
+}
+
+/* @media (min-width: 1024px) and (max-width: 1536px) {} */
+
+@media (max-width: 1023px) {
+  .O_MainEntityBar {
+    position: relative;
+
+    &.folder {
+      .W_MainEntityBarContent {
+        width: 100%;
+      }
+    }
+
+    .A_MainEntityBarToggleButton {
+      .A_Text {
+        display: block;
+      }
+    }
+
+    .A_MainEntityBarFavButton,
+    .M_InfoMark,
+    .A_MainEntityBarMoreButton {
+      position: absolute;
+    }
+
+    .A_MainEntityBarMoreButton {
+      top: 16px;
+      right: 16px;
+    }
+
+    /* Isolate */
+    .A_MainEntityBarFavButton {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      bottom: 16px;
+      right: 16px;
+      font-size: var(--Q_Icon-font-size);
+    }
+
+    .M_InfoMark {
+      bottom: 16px;
+      right: calc(36px + 16px + 4px);
+    }
+
+    .W_MainEntityBarContent {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+
+      .W_MainEntityBarContentLeft {
+        flex: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: visible;
+        width: calc(100% - 42px);
+
+        .A_MainEntityBarToggleButton {
+          order: 2;
+        }
+
+        .M_MainEntityBarTitle {
+          order: 1;
+          width: 100%;
+
+          .M_LabelsWithDivider {
+            color: var(--text-secondary);
+            font-size: 12px;
+            line-height: 16px;
+          }
+
+          /* Isolate */
+          .M_MainEntityBarEntityName {
+            width: 100%;
+            color: var(--text-primary);
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          .A_Text {
+            width: auto;
+            text-wrap: initial;
+            text-overflow: unset;
+            overflow: visible;
+            /* width: min-content; */
+          }
+        }
+      }
+
+      .W_MainEntityBarContentRight {
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc(100% - 42px);
+
+        .C_MainEntityBarAmountRow {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 6px;
+
+          /* Isolate */
+          .M_MainEntityBarAmount {
+            flex-direction: row;
+            align-items: baseline;
+
+            .A_Text {
+              width: fit-content;
+              text-overflow: unset;
+              font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+              font-size: var(--ui-accent-text-medium-font-size, 16px);
+              font-weight: 700;
+              line-height: var(--ui-accent-text-medium-line-height, 20px);
+              gap: 4px;
+
+              &:first-child {
+                order: 2;
+                text-transform: lowercase;
+                color: var(--text-muted);
+              }
+
+              &:last-child {
+                order: 1;
+                color: var(--text-primary);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

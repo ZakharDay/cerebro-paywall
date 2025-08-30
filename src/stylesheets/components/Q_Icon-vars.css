@@ -1,5 +1,18 @@
 :root {
-  --Q_Icon-width: 24px;
-  --Q_Icon-height: 24px;
   --Q_Icon-font-size: 24px;
+  --Q_Icon-line-height: 24px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --Q_Icon-font-size: 22px;
+    --Q_Icon-line-height: 22px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --Q_Icon-font-size: 24px;
+    --Q_Icon-line-height: 24px;
+  }
 }

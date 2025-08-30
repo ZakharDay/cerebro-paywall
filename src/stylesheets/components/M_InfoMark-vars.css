@@ -1,0 +1,15 @@
+:root {
+  --M_InfoMark-size: 36px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --M_InfoMark-size: 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --M_InfoMark-size: 36px;
+  }
+}

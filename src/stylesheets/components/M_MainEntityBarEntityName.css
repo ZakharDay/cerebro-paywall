@@ -1,4 +1,4 @@
-.v2_M_EntityName {
+.M_MainEntityBarEntityName {
   display: flex;
   align-items: flex-start;
   gap: var(--v2_M_EntityName-gap);

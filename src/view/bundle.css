@@ -46,12 +46,13 @@
 /*  */
 /*  */
 
-@import '../stylesheets/components/v2_A_EntityMoreButton-vars.css';
-@import '../stylesheets/components/v2_A_Button-vars.css';
-@import '../stylesheets/components/v2_A_ToggleOpenBarButton-vars.css';
-@import '../stylesheets/components/v2_M_EntityName-vars.css';
-@import '../stylesheets/components/v2_M_EntityTitleWithDescription-vars.css';
-@import '../stylesheets/components/v2_O_EntityBar-vars.css';
+@import '../stylesheets/components/A_MainEntityBarFavButton-vars.css';
+@import '../stylesheets/components/A_MainEntityBarMoreButton-vars.css';
+@import '../stylesheets/components/A_MainEntityBarToggleButton-vars.css';
+@import '../stylesheets/components/M_MainEntityBarAmount-vars.css';
+@import '../stylesheets/components/M_MainEntityBarEntityName-vars.css';
+@import '../stylesheets/components/M_MainEntityBarTitle-vars.css';
+@import '../stylesheets/components/O_MainEntityBar-vars.css';
 
 /*  */
 /*  */
@@ -125,16 +126,15 @@
 /*  */
 /*  */
 
-@import '../stylesheets/components/v2_A_InfoButton.css';
-@import '../stylesheets/components/v2_A_EntityMoreButton.css';
-@import '../stylesheets/components/v2_A_Button.css';
-@import '../stylesheets/components/v2_A_EntityFavButton.css';
-@import '../stylesheets/components/v2_A_ToggleOpenBarButton.css';
-@import '../stylesheets/components/v2_M_EntityName.css';
-@import '../stylesheets/components/v2_M_EntityTitleWithDescription.css';
-@import '../stylesheets/components/v2_O_EntityBar.css';
-@import '../stylesheets/components/v2_T_EntityBarsFolders.css';
-@import '../stylesheets/components/v2_L_InternalPageWithSideBar.css';
+@import '../stylesheets/components/A_MainEntityBarMoreButton.css';
+@import '../stylesheets/components/A_MainEntityBarFavButton.css';
+@import '../stylesheets/components/A_MainEntityBarToggleButton.css';
+@import '../stylesheets/components/M_MainEntityBarAmount.css';
+@import '../stylesheets/components/M_InfoMark.css';
+@import '../stylesheets/components/M_MainEntityBarEntityName.css';
+@import '../stylesheets/components/M_MainEntityBarTitle.css';
+@import '../stylesheets/components/O_MainEntityBar.css';
+@import '../stylesheets/components/T_MainEntityBarsFolders.css';
 
 /*  */
 /*  */

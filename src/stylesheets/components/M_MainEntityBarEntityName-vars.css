@@ -1,0 +1,15 @@
+:root {
+  --M_MainEntityBarEntityName-gap: 6px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --M_MainEntityBarEntityName-gap: 4px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --M_MainEntityBarEntityName-gap: 6px;
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"Add media queries for vars": {
+		"scope": "css",
+		"prefix": "vmedia",
+		"body": [
+			":root {",
+			"}",
+			"",
+			"@media (min-width: 1024px) and (max-width: 1536px) {",
+			":root {}",
+			"}",
+			"",
+			"@media (max-width: 1023px) {",
+			":root {}",
+			"}"
+		],
+		"description": "Add media queries rules for vars css file"
+	}
+}

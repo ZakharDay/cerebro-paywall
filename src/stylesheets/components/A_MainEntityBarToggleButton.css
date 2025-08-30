@@ -1,4 +1,4 @@
-.v2_A_ToggleOpenBarButton {
+.A_MainEntityBarToggleButton {
   cursor: pointer;
   position: relative;
 
@@ -52,7 +52,7 @@
 }
 
 @media (max-width: 1023px) {
-  .v2_A_ToggleOpenBarButton {
+  .A_MainEntityBarToggleButton {
     display: flex;
     justify-content: center;
     align-items: center;

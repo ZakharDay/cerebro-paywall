@@ -1,9 +1,0 @@
-:root {
-  --v2_M_EntityName-gap: 6px;
-}
-
-@media (max-width: 1536px) {
-  :root {
-    --v2_M_EntityName-gap: 6px;
-  }
-}
