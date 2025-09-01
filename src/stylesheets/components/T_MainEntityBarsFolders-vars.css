@@ -1,0 +1,27 @@
+:root {
+  --W_MainEntityBarsFoldersClient-padding-vertical: 24px;
+  --W_MainEntityBarsFoldersClient-first_child-padding-top: 20px;
+  --W_MainEntityBarsFoldersSubClient-padding-top: 24px;
+  --C_Entities-gap: 12px;
+  --C_Entities-padding-top: 12px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --W_MainEntityBarsFoldersClient-padding-vertical: 22px;
+    --W_MainEntityBarsFoldersClient-first_child-padding-top: 18px;
+    --W_MainEntityBarsFoldersSubClient-padding-top: 22px;
+    --C_Entities-gap: 10px;
+    --C_Entities-padding-top: 10px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --W_MainEntityBarsFoldersClient-padding-vertical: 24px;
+    --W_MainEntityBarsFoldersClient-first_child-padding-top: 20px;
+    --W_MainEntityBarsFoldersSubClient-padding-top: 24px;
+    --C_Entities-gap: 12px;
+    --C_Entities-padding-top: 12px;
+  }
+}

@@ -1,0 +1,39 @@
+.A_MainEntityBarFavButton {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--A_MainEntityBarFavButton-size);
+  height: var(--A_MainEntityBarFavButton-size);
+  min-width: var(--A_MainEntityBarFavButton-size);
+  max-width: var(--A_MainEntityBarFavButton-size);
+
+  &::before {
+    content: var(--icon-star-border);
+    display: block;
+    width: var(--A_MainEntityBarFavButton-size);
+    min-width: var(--A_MainEntityBarFavButton-size);
+    height: var(--A_MainEntityBarFavButton-size);
+    font-family: var(--icon-font);
+    font-size: var(--A_MainEntityBarFavButton-font-size);
+    line-height: var(--A_MainEntityBarFavButton-line-height);
+    text-align: center;
+    color: var(--icon-default);
+    transition: all 0.1s ease-in-out;
+    speak: none;
+  }
+
+  &:hover::before {
+    color: var(--interactive-initial);
+  }
+
+  &.active::before {
+    content: var(--icon-star-filled);
+    color: var(--interactive-initial);
+  }
+
+  &.active:hover::before {
+    color: var(--icon-default);
+  }
+}

@@ -6,7 +6,7 @@
 
   height: var(--O_MenuBar-height);
   padding: var(--O_MenuBar-padding-vertical) var(--O_MenuBar-padding-horizontal);
-  border-bottom: 1px solid var(--border-default);
+  border-bottom: 1px solid var(--border-default-color);
 
   .W_MenuBarLeft {
     display: flex;

@@ -1,0 +1,21 @@
+:root {
+  --A_MainEntityBarFavButton-size: 20px;
+  --A_MainEntityBarFavButton-font-size: 20px;
+  --A_MainEntityBarFavButton-line-height: 18px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --A_MainEntityBarFavButton-size: 18px;
+    --A_MainEntityBarFavButton-font-size: 18px;
+    --A_MainEntityBarFavButton-line-height: 18px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --A_MainEntityBarFavButton-size: 36px;
+    --A_MainEntityBarFavButton-font-size: 22px;
+    --A_MainEntityBarFavButton-line-height: 36px;
+  }
+}

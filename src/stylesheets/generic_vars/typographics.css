@@ -2,56 +2,49 @@
 :root {
   --ui-heading-1-font-size: 24px;
   --ui-heading-1-line-height: 30px;
+
   --ui-heading-2-font-size: 20px;
   --ui-heading-2-line-height: 32px;
+
   --ui-descriptor-font-size: 16px;
   --ui-descriptor-line-height: 22px;
+
   --ui-paragraph-medium-font-size: 20px;
   --ui-paragraph-medium-line-height: 32px;
   --ui-paragraph-medium-paragraph-spacing: 16px;
+
   --ui-list-item-font-size: 20px;
   --ui-list-item-line-height: 30px;
   --ui-list-item-list-spacing: 8px;
+
+  --ui-button-text-font-size: 14px;
+  --ui-button-text-line-height: 20px;
+  --ui-button-text-font-weight: 500;
+
   --ui-button-text-large-font-size: 18px;
   --ui-button-text-large-line-height: 24px;
-  --ui-button-text-default-font-size: 14px;
-  --ui-button-text-default-line-height: 20px;
+
   --ui-tab-button-text-font-size: 18px;
   --ui-tab-button-text-line-height: 24px;
+
   --ui-chip-text-font-size: 10px;
   --ui-chip-text-line-height: 13px;
+  --ui-chip-text-font-weight: 500;
+
   --ui-label-font-size: 12px;
   --ui-label-line-height: 16px;
+  --ui-label-font-weight: 400;
+
   --ui-accent-text-medium-font-size: 16px;
   --ui-accent-text-medium-line-height: 20px;
+  --ui-accent-text-medium-font-weight: 700;
+
   --ui-form-label-font-size: 16px;
   --ui-form-label-line-height: 20px;
   --ui-form-text-font-size: 16px;
   --ui-form-text-line-height: 20px;
   --display-heading-3-font-size: 24px;
   --display-heading-3-line-height: 37px;
-
-  --C_FormFields-gap: 28px;
-  --C_Entities-gap: 12px;
-
-  /*
-
-  --A_Input-text_compact-padding-vertical: 16px;
-  --A_Input-text_compact-padding-horizontal: 10px;
-  --A_Input-select-padding-horizontal: 16px;
-  --A_Input-select-padding-vertical: 16px;
-  --A_Input-select-padding-vertical-left: 44px;
-  --A_Input-textarea-padding-horizontal: 16px;
-  --A_Input-textarea-padding-vertical: 16px;
-
-  --Q_ToggleSwitch-track-width: 51px;
-  --Q_ToggleSwitch-padding-high: 31px;
-  --Q_ToggleSwitch-knob-width: 27px;
-  --Q_ToggleSwitch-knob-high: 27px;
-
-  --Q_CounterBadge-padding-vertical: 4px;
-  --Q_CounterBadge-padding-horizontal: 0px;
- */
 }
 
 /* Small Desktop */
@@ -87,27 +80,5 @@
     --ui-form-text-line-height: 18px;
     --display-heading-3-font-size: 22px;
     --display-heading-3-line-height: 35px;
-
-    --C_FormFields-gap: 22px;
-    --C_Entities-gap: 10px;
-
-    /* --A_ToggleOpenButton-padding-horizontal: 2px;
-    --A_ToggleOpenButton-padding-vertical: 2px;
-
-    --A_Input-text_compact-padding-vertical: 0px;
-    --A_Input-text_compact-padding-horizontal: 0px;
-    --A_Input-select-padding-horizontal: 0px;
-    --A_Input-select-padding-vertical: 0px;
-    --A_Input-select-padding-vertical-left: 0px;
-    --A_Input-textarea-padding-horizontal: 12px;
-    --A_Input-textarea-padding-vertical: 12px;
-
-    --Q_ToggleSwitch-track-width: 44px;
-    --Q_ToggleSwitch-padding-high: 27px;
-    --Q_ToggleSwitch-knob-width: 23px;
-    --Q_ToggleSwitch-knob-high: 23px;
-
-    --Q_CounterBadge-padding-vertical: 2px;
-    --Q_CounterBadge-padding-horizontal: 0px; */
   }
 }

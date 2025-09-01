@@ -1,0 +1,80 @@
+:root {
+  --O_MainEntityBar-gap: 12px;
+  --O_MainEntityBar-padding: 24px;
+  --O_MainEntityBar-border-radius: 8px;
+  --W_MainEntityBarContent-gap: 24px;
+  --W_MainEntityBarContent-width: 100%;
+
+  /* prettier-ignore */
+  --W_MainEntityBarContent-folder-width: calc(
+    100% -
+    var(--A_MainEntityBarMoreButton-size) -
+    var(--A_MainEntityBarMoreButton-margin-left)
+  );
+
+  --W_MainEntityBarContentLeft-width: auto;
+  --W_MainEntityBarContentLeft-gap: 12px;
+  --W_MainEntityBarContentLeft-padding-bottom: 0;
+  --W_MainEntityBarContentCenter-gap: 8px;
+  --W_MainEntityBarContentCenter-padding-bottom: 0;
+  --W_MainEntityBarContentCenter-last-child-padding-bottom: 0;
+  --W_MainEntityBarContentRight-width: auto;
+  --W_MainEntityBarContentRight-gap: 24px;
+  --W_MainEntityBarContentRight-padding-top: 0;
+  --C_MainEntityBarAmountRow-gap: 24px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --O_MainEntityBar-gap: 10px;
+    --O_MainEntityBar-padding: 20px;
+    --O_MainEntityBar-border-radius: 8px;
+    --W_MainEntityBarContent-gap: 20px;
+    --W_MainEntityBarContentLeft-gap: 10px;
+    --W_MainEntityBarContentLeft-padding-bottom: 0;
+    --W_MainEntityBarContentCenter-gap: 6px;
+    --W_MainEntityBarContentCenter-padding-bottom: 0;
+    --W_MainEntityBarContentCenter-last-child-padding-bottom: 0;
+    --W_MainEntityBarContentRight-gap: 20px;
+    --W_MainEntityBarContentRight-padding-top: 0;
+    --C_MainEntityBarAmountRow-gap: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    /* prettier-ignore */
+    --W_MainEntityBarContent-calc-width: calc(
+      100% -
+      (
+        var(--O_MainEntityBar-padding) -
+        var(--border-width)
+      ) * 2 -
+      var(--W_MainEntityBarContentLeft-gap)
+    );
+
+    --O_MainEntityBar-gap: 10px;
+    --O_MainEntityBar-padding: 16px;
+    --O_MainEntityBar-border-radius: 8px;
+    --W_MainEntityBarContent-gap: 12px;
+    --W_MainEntityBarContent-folder-width: 100%;
+
+    --W_MainEntityBarContentLeft-width: var(
+      --W_MainEntityBarContent-calc-width
+    );
+
+    --W_MainEntityBarContentLeft-gap: 12px;
+    --W_MainEntityBarContentLeft-padding-bottom: 4px;
+    --W_MainEntityBarContentCenter-gap: 0;
+    --W_MainEntityBarContentCenter-padding-bottom: 4px;
+    --W_MainEntityBarContentCenter-last-child-padding-bottom: 6px;
+
+    --W_MainEntityBarContentRight-width: var(
+      --W_MainEntityBarContent-calc-width
+    );
+
+    --W_MainEntityBarContentRight-gap: 16px;
+    --W_MainEntityBarContentRight-padding-top: 8px;
+    --C_MainEntityBarAmountRow-gap: 6px;
+  }
+}

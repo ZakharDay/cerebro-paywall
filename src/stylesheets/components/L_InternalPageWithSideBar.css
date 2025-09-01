@@ -40,25 +40,19 @@
     width: 100vw;
     padding-top: var(--O_MenuBar-height);
 
+    /* prettier-ignore */
     padding-left: calc(
       var(--S_SideBar-width) +
-        var(--W_InternalPageWithSideBarScrollArea-content-padding-horizontal)
+      var(--W_InternalPageWithSideBarScrollArea-padding-horizontal)
     );
 
     padding-right: var(
-      --W_InternalPageWithSideBarScrollArea-content-padding-horizontal
+      --W_InternalPageWithSideBarScrollArea-padding-horizontal
     );
 
     & > * {
       width: 100%;
-      max-width: var(--W_InternalPageWithSideBarScrollArea-content-max-width);
-    }
-
-    .C_Entities {
-      display: flex;
-      flex-direction: column;
-      gap: var(--C_Entities-gap);
-      padding: var(--C_Entities-gap) 0;
+      max-width: var(--W_InternalPageWithSideBarScrollArea-max-width);
     }
   }
 
@@ -131,11 +125,11 @@
 
     .W_InternalPageWithSideBarScrollArea {
       padding-left: var(
-        --W_InternalPageWithSideBarScrollArea-content-padding-horizontal
+        --W_InternalPageWithSideBarScrollArea-padding-horizontal
       );
 
       padding-right: var(
-        --W_InternalPageWithSideBarScrollArea-content-padding-horizontal
+        --W_InternalPageWithSideBarScrollArea-padding-horizontal
       );
     }
   }
@@ -170,24 +164,5 @@
         }
       }
     }
-
-    /* .W_InternalPageWithSideBarScrollArea { */
-    /* .C_Entities { */
-
-    /* } */
-
-    .O_EntityBar {
-      /* display: block; */
-      flex-direction: column;
-      gap: 12px;
-
-      .W_CardContentLeft {
-      }
-
-      .W_CardContentRight {
-        justify-content: flex-start;
-      }
-    }
-    /* } */
   }
 }

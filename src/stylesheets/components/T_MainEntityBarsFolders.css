@@ -1,0 +1,33 @@
+.T_MainEntityBarsFolders {
+  .W_MainEntityBarsFoldersClient {
+    padding: var(--W_MainEntityBarsFoldersClient-padding-vertical) 0;
+
+    &:first-child {
+      padding-top: var(--W_MainEntityBarsFoldersClient-first_child-padding-top);
+    }
+
+    &:not(:last-child) {
+      border-bottom: var(--border-width) solid var(--border-default-color);
+    }
+
+    & > .O_MainEntityBar:not(.opened) ~ .W_SubClient,
+    & > .O_MainEntityBar:not(.opened) ~ .C_Entities {
+      display: none;
+    }
+
+    .W_MainEntityBarsFoldersSubClient {
+      padding-top: var(--W_MainEntityBarsFoldersSubClient-padding-top);
+
+      & > .O_MainEntityBar:not(.opened) ~ .C_Entities {
+        display: none;
+      }
+    }
+  }
+
+  .C_Entities {
+    display: flex;
+    flex-direction: column;
+    gap: var(--C_Entities-gap);
+    padding-top: var(--C_Entities-padding-top);
+  }
+}

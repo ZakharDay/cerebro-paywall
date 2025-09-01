@@ -1,0 +1,35 @@
+:root {
+  --A_MainEntityBarToggleButton-size: 36px;
+  --A_MainEntityBarToggleButton-border-radius: 18px;
+  --A_MainEntityBarToggleButton-border-width: 2px;
+  --A_MainEntityBarToggleButton-gap: 0;
+  --A_MainEntityBarToggleButton-font-size: 0;
+  --A_MainEntityBarToggleButton-line-height: 0;
+  --A_MainEntityBarToggleButton-icon-font-size: 24px;
+  --A_MainEntityBarToggleButton-icon-line-height: 24px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --A_MainEntityBarToggleButton-size: 32px;
+    --A_MainEntityBarToggleButton-border-radius: 16px;
+    --A_MainEntityBarToggleButton-border-width: 2px;
+    --A_MainEntityBarToggleButton-gap: 0;
+    --A_MainEntityBarToggleButton-icon-font-size: 22px;
+    --A_MainEntityBarToggleButton-icon-line-height: 22px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --A_MainEntityBarToggleButton-size: auto;
+    --A_MainEntityBarToggleButton-border-radius: 0;
+    --A_MainEntityBarToggleButton-border-width: 0;
+    --A_MainEntityBarToggleButton-gap: 4px;
+    --A_MainEntityBarToggleButton-font-size: 14px;
+    --A_MainEntityBarToggleButton-line-height: 18px;
+    --A_MainEntityBarToggleButton-font-weight: 500;
+    --A_MainEntityBarToggleButton-icon-font-size: 18px;
+    --A_MainEntityBarToggleButton-icon-line-height: 18px;
+  }
+}

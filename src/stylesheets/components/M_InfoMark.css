@@ -1,0 +1,31 @@
+.M_InfoMark {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--M_InfoMark-size);
+  height: var(--M_InfoMark-size);
+  min-width: var(--M_InfoMark-size);
+  max-width: var(--M_InfoMark-size);
+  /* margin-left: -12px; */
+  /* border-radius: 18px; */
+  /* background-color: var(--v2-icon-button-background); */
+  /* transition: all 0.1s ease-in-out; */
+
+  &::before {
+    content: var(--icon-info-mark);
+    display: block;
+    font-family: var(--icon-font);
+    font-size: var(--M_InfoMark-font-size);
+    line-height: var(--M_InfoMark-line-height);
+    color: var(--icon-default);
+    text-align: center;
+    /* transition: all 0.3s ease-in-out; */
+    speak: none;
+  }
+
+  /* &:hover {
+    background-color: var(--v2-icon-button-background-hover);
+  } */
+}

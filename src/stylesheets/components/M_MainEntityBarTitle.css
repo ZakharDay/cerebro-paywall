@@ -1,0 +1,13 @@
+.M_MainEntityBarTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--M_MainEntityBarTitle-gap);
+
+  .A_Text {
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: min-content;
+  }
+}

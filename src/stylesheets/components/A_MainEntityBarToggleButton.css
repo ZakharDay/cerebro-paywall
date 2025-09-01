@@ -1,0 +1,85 @@
+.A_MainEntityBarToggleButton {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--A_MainEntityBarToggleButton-gap);
+  width: var(--A_MainEntityBarToggleButton-size);
+  height: var(--A_MainEntityBarToggleButton-size);
+  min-width: var(--A_MainEntityBarToggleButton-size);
+  max-width: var(--A_MainEntityBarToggleButton-size);
+  border-radius: var(--A_MainEntityBarToggleButton-border-radius);
+  border: var(--A_MainEntityBarToggleButton-border-width) solid
+    var(--border-default-color);
+  transition: all 0.1s ease-in-out;
+
+  /* v2 EXTRA */
+  /* background-color: var(--v2-icon-button-background); */
+
+  .A_Text {
+    display: none;
+  }
+
+  &::before {
+    content: var(--icon-chevron-right);
+    display: block;
+    font-family: var(--icon-font);
+    font-size: var(--A_MainEntityBarToggleButton-icon-font-size);
+    line-height: var(--A_MainEntityBarToggleButton-icon-line-height);
+    color: var(--icon-default);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    speak: none;
+  }
+
+  /* v2 EXTRA */
+
+  /* &:hover {
+    background-color: var(--v2-icon-button-background-hover);
+    box-shadow: 0 0 4px 0 var(--v2-glow-default);
+  } */
+}
+
+@media (max-width: 1023px) {
+  .A_MainEntityBarToggleButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border: none;
+    background-color: initial;
+    font-size: var(--A_MainEntityBarToggleButton-font-size);
+    line-height: var(--A_MainEntityBarToggleButton-line-height);
+    font-weight: var(--A_MainEntityBarToggleButton-font-weight);
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: var(--icon-chevron-down);
+      display: block;
+      font-family: var(--icon-font);
+      font-size: var(--A_MainEntityBarToggleButton-icon-font-size);
+      line-height: var(--A_MainEntityBarToggleButton-icon-line-height);
+      color: var(--icon-default);
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      speak: none;
+    }
+
+    .A_Text {
+      display: block;
+
+      &:first-child {
+        color: var(--text-primary);
+      }
+
+      &:last-child {
+        color: var(--text-muted);
+        text-transform: lowercase;
+      }
+    }
+  }
+}

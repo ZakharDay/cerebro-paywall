@@ -14,7 +14,7 @@
   align-items: center;
 
   border-radius: 18px;
-  border: 2px solid var(--border-default);
+  border: 2px solid var(--border-default-color);
 
   .Q_Icon {
     transition: all 0.3s ease;

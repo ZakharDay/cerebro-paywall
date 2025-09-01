@@ -1,0 +1,23 @@
+:root {
+  --M_InfoMark-size: 36px;
+  --M_InfoMark-margin-right: 0;
+  --M_InfoMark-font-size: 24px;
+  --M_InfoMark-line-height: 36px;
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --M_InfoMark-size: 32px;
+    --M_InfoMark-font-size: 22px;
+    --M_InfoMark-line-height: 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --M_InfoMark-size: 36px;
+    --M_InfoMark-margin-right: 4px;
+    --M_InfoMark-font-size: 24px;
+    --M_InfoMark-line-height: 36px;
+  }
+}

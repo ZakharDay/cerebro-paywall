@@ -1,19 +1,17 @@
 .A_Chip {
   padding: var(--A_Chip-padding-horizontal) var(--A_Chip-padding-vertical);
   border-radius: var(--A_Chip-border-radius);
-  border: 1px solid var(--text-muted);
-  color: var(--text-muted);
+  border: var(--border-width) solid var(--text-muted);
+  font-family: var(--font-family);
+  font-size: var(--ui-chip-text-font-size);
+  line-height: var(--ui-chip-text-line-height);
+  font-weight: var(--ui-chip-text-font-weight);
   text-align: center;
   text-wrap: nowrap;
-
-  /* ui-chip-text */
-  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 13px; /* 130% */
+  color: var(--text-muted);
 
   &.danger {
-    border: 1px solid var(--danger);
+    border: var(--border-width) solid var(--danger);
     color: var(--danger);
   }
 }

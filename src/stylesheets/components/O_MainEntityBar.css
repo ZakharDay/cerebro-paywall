@@ -1,0 +1,218 @@
+.O_MainEntityBar {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--O_MainEntityBar-gap);
+  padding: var(--O_MainEntityBar-padding);
+  border-radius: var(--O_MainEntityBar-border-radius);
+  border: var(--border-width) solid var(--border-default-color);
+  background-color: var(--card-bg-default);
+  box-shadow: var(--card-shadow-params) var(--shadow-default-color);
+  /* transition: all 0.3s ease-in-out; */
+
+  .W_MainEntityBarContent {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: var(--W_MainEntityBarContent-gap);
+    width: var(--W_MainEntityBarContent-width);
+
+    .W_MainEntityBarContentLeft {
+      flex: 1 0 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--W_MainEntityBarContentLeft-gap);
+      width: var(--W_MainEntityBarContentLeft-width);
+      padding-bottom: var(--W_MainEntityBarContentLeft-padding-bottom);
+      overflow-x: auto;
+
+      .M_MainEntityBarTitle {
+        width: var(--W_MainEntityBarContent-folder-width);
+      }
+    }
+
+    .W_MainEntityBarContentCenter {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: var(--W_MainEntityBarContentCenter-gap);
+      padding-bottom: var(--W_MainEntityBarContentCenter-padding-bottom);
+
+      &:last-child {
+        padding-bottom: var(
+          --W_MainEntityBarContentCenter-last-child-padding-bottom
+        );
+      }
+    }
+
+    .W_MainEntityBarContentRight {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: var(--W_MainEntityBarContentRight-gap);
+      width: var(--W_MainEntityBarContentRight-width);
+      padding-top: var(--W_MainEntityBarContentRight-padding-top);
+    }
+  }
+
+  &.accent {
+    border-color: var(--border-accent-color);
+    background-color: var(--card-bg-accent);
+    box-shadow: var(--card-shadow-params) var(--shadow-accent);
+
+    .M_InfoMark,
+    .A_MainEntityBarToggleButton {
+      background-color: var(--card-bg-accent);
+    }
+  }
+
+  &.folder {
+    &:not(.noMore) .W_MainEntityBarContent {
+      width: var(--W_MainEntityBarContent-folder-width);
+    }
+
+    &.opened {
+      .A_MainEntityBarToggleButton::before {
+        transform: rotate(90deg);
+      }
+    }
+
+    /* v2 EXTRA */
+    /* &:hover {
+      background: var(--card-bg-hover);
+      border: 1px solid var(--v2-card-border-hover);
+      box-shadow: 0 4px 4px 0 var(--v2-card-shadow-hover);
+    } */
+  }
+
+  &.noMore {
+    .W_MainEntityBarContent {
+      .W_MainEntityBarContentLeft {
+        .M_MainEntityBarTitle {
+          width: var(--W_MainEntityBarContent-width);
+        }
+      }
+    }
+  }
+
+  .C_MainEntityBarAmountRow {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--C_MainEntityBarAmountRow-gap);
+  }
+}
+
+@media (max-width: 1023px) {
+  .O_MainEntityBar {
+    position: relative;
+
+    .A_MainEntityBarToggleButton {
+      .A_Text {
+        display: block;
+      }
+    }
+
+    .A_MainEntityBarFavButton,
+    .M_InfoMark,
+    .A_MainEntityBarMoreButton {
+      position: absolute;
+    }
+
+    .A_MainEntityBarMoreButton {
+      /* prettier-ignore */
+      top: calc(
+        var(--O_MainEntityBar-padding) -
+        var(--border-width)
+      );
+
+      /* prettier-ignore */
+      right: calc(
+        var(--O_MainEntityBar-padding) -
+        var(--border-width)
+      );
+    }
+
+    .A_MainEntityBarFavButton {
+      /* prettier-ignore */
+      bottom: calc(
+        var(--O_MainEntityBar-padding) -
+        var(--border-width)
+      );
+
+      /* prettier-ignore */
+      right: calc(
+        var(--O_MainEntityBar-padding) -
+        var(--border-width)
+      );
+    }
+
+    .M_InfoMark {
+      /* prettier-ignore */
+      bottom: calc(
+        var(--O_MainEntityBar-padding) -
+        var(--border-width)
+      );
+
+      /* prettier-ignore */
+      right: calc(
+        var(--M_InfoMark-size) +
+        var(--O_MainEntityBar-padding) +
+        var(--M_InfoMark-margin-right)
+      );
+    }
+
+    .W_MainEntityBarContent {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .W_MainEntityBarContentLeft {
+        flex: auto;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        width: var(--W_MainEntityBarContentLeft-width);
+        overflow: visible;
+
+        .M_MainEntityBarTitle {
+          .M_LabelsWithDivider {
+            .A_Text:not(:only-child) {
+              &:nth-child(1),
+              &:nth-child(2) {
+                display: none;
+              }
+            }
+          }
+
+          .A_Text {
+            width: auto;
+            text-wrap: initial;
+            text-overflow: unset;
+            overflow: visible;
+          }
+        }
+      }
+
+      .W_MainEntityBarContentRight {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .C_MainEntityBarAmountRow {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+
+    &.folder {
+      &.opened {
+        .A_MainEntityBarToggleButton::after {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+}

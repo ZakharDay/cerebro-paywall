@@ -1,9 +1,9 @@
 :root {
-  --M_LabelsWithDivider-gap: 8px;
+  --M_LabelsWithDivider-gap: 6px;
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1024px) and (max-width: 1536px) {
   :root {
-    --M_LabelsWithDivider-gap: 8px;
+    --M_LabelsWithDivider-gap: 4px;
   }
 }
