@@ -31,11 +31,14 @@ function init_S_SideBar_mobile() {
 }
 
 function init_O_EntityBar() {
-  const entityBars = document.getElementsByClassName('O_EntityBar')
+  const entityBars = document.getElementsByClassName('O_MainEntityBar')
 
   for (let index = 0; index < entityBars.length; index++) {
     const entityBar = entityBars[index]
-    const toggleOpenButton = entityBar.querySelector('.A_ToggleOpenBarButton')
+
+    const toggleOpenButton = entityBar.querySelector(
+      '.A_MainEntityBarToggleButton'
+    )
 
     if (toggleOpenButton) {
       toggleOpenButton.addEventListener('click', () => {
@@ -45,8 +48,19 @@ function init_O_EntityBar() {
   }
 }
 
+function init_A_EntityFavButton() {
+  const buttons = document.querySelectorAll('.A_MainEntityBarFavButton')
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('active')
+    })
+  })
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   init_S_NoticeBar()
   init_S_SideBar_mobile()
   init_O_EntityBar()
+  init_A_EntityFavButton()
 })

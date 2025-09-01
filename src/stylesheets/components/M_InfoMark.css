@@ -1,46 +1,31 @@
 .M_InfoMark {
   cursor: pointer;
-
   position: relative;
-
   display: flex;
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
-  max-width: 36px;
-  /* margin-left: -12px; */
-  border-radius: 18px;
-
   justify-content: center;
   align-items: center;
-
-  background-color: var(--v2-icon-button-background);
-  transition: all 0.1s ease-in-out;
+  width: var(--M_InfoMark-size);
+  height: var(--M_InfoMark-size);
+  min-width: var(--M_InfoMark-size);
+  max-width: var(--M_InfoMark-size);
+  /* margin-left: -12px; */
+  /* border-radius: 18px; */
+  /* background-color: var(--v2-icon-button-background); */
+  /* transition: all 0.1s ease-in-out; */
 
   &::before {
-    width: var(--Q_Icon-width);
-    min-width: var(--Q_Icon-width);
-    height: var(--Q_Icon-height);
-    font-family: 'tabler-icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
+    content: var(--icon-info-mark);
     display: block;
+    font-family: var(--icon-font);
+    font-size: var(--M_InfoMark-font-size);
+    line-height: var(--M_InfoMark-line-height);
+    color: var(--icon-default);
     text-align: center;
-    font-size: var(--Q_Icon-font-size);
-    color: var(--interactive-initial);
-    transition: all 0.3s ease-in-out;
-
-    content: '\f746';
+    /* transition: all 0.3s ease-in-out; */
+    speak: none;
   }
 
-  &:hover {
+  /* &:hover {
     background-color: var(--v2-icon-button-background-hover);
-  }
+  } */
 }

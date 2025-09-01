@@ -1,6 +1,8 @@
 /* Vars */
-@import '../stylesheets/theme.css';
-@import '../stylesheets/screen.css';
+@import '../stylesheets/generic_vars/generic.css';
+@import '../stylesheets/generic_vars/icons.css';
+@import '../stylesheets/generic_vars/theme.css';
+@import '../stylesheets/generic_vars/typographics.css';
 
 @import '../stylesheets/components/Q_Icon-vars.css';
 @import '../stylesheets/components/Q_Logo-vars.css';
@@ -53,6 +55,7 @@
 @import '../stylesheets/components/M_MainEntityBarEntityName-vars.css';
 @import '../stylesheets/components/M_MainEntityBarTitle-vars.css';
 @import '../stylesheets/components/O_MainEntityBar-vars.css';
+@import '../stylesheets/components/T_MainEntityBarsFolders-vars.css';
 
 /*  */
 /*  */
@@ -65,7 +68,6 @@
 @import '../stylesheets/reset.css';
 @import '../stylesheets/fonts.css';
 @import '../stylesheets/basics.css';
-@import '../stylesheets/typographics.css';
 
 /* End Basics */
 
@@ -117,7 +119,6 @@
 @import '../stylesheets/components/S_SideBar.css';
 @import '../stylesheets/components/S_NavigationBar.css';
 
-@import '../stylesheets/components/T_EntityBarsFolders.css';
 @import '../stylesheets/components/T_PayWallModal.css';
 
 @import '../stylesheets/components/L_InternalPageWithSideBar.css';

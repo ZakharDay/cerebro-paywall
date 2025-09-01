@@ -8,8 +8,8 @@
   --card-bg-default: #ffffff;
   --card-bg-default-transparent: rgba(255, 255, 255, 0);
   --card-bg-accent: #f8fcfb;
-  --border-accent: #bbddd2;
-  --border-default: #e6e5e5;
+  --border-accent-color: #bbddd2;
+  --border-default-color: #e6e5e5;
   --icon-default: #9b9b9b;
   --icon-accent: #629e8e;
   --icon-active: #000000;
@@ -21,7 +21,7 @@
   --danger-dark-background: #ffd6d6;
   --success-background: #e8ffd6;
   --modal-fader: rgba(0, 0, 0, 0.2);
-  --shadow-default: rgba(0, 0, 0, 0.05);
+  --shadow-default-color: rgba(0, 0, 0, 0.05);
   --shadow-accent: rgba(86, 170, 143, 0.1);
   --logo-text: #2e2e2e;
   --brand-off-white-yellow: #fbfaf9;
@@ -59,8 +59,8 @@ body.dark {
   --card-bg-default: #2f2f32;
   --card-bg-default-transparent: rgba(47, 47, 50, 0);
   --card-bg-accent: #212423;
-  --border-accent: #30745f;
-  --border-default: #242424;
+  --border-accent-color: #30745f;
+  --border-default-color: #242424;
   --icon-default: #9b9b9b;
   --icon-accent: #629e8e;
   --icon-active: #c4c4cb;
@@ -72,7 +72,7 @@ body.dark {
   --danger-dark-background: #3f3b3b;
   --success-background: #e8ffd6;
   --modal-fader: rgba(255, 255, 255, 0.2);
-  --shadow-default: rgba(0, 0, 0, 0.15);
+  --shadow-default-color: rgba(0, 0, 0, 0.15);
   --shadow-accent: rgba(0, 0, 0, 0.15);
   --logo-text: #cfd5e8;
   --brand-off-white-yellow: #fbfaf9;
@@ -102,8 +102,8 @@ body.dark {
     --card-bg-default: #2f2f32;
     --card-bg-default-transparent: rgba(47, 47, 50, 0);
     --card-bg-accent: #212423;
-    --border-accent: #30745f;
-    --border-default: #242424;
+    --border-accent-color: #30745f;
+    --border-default-color: #242424;
     --icon-default: #9b9b9b;
     --icon-accent: #629e8e;
     --icon-active: #c4c4cb;
@@ -115,7 +115,7 @@ body.dark {
     --danger-dark-background: #3f3b3b;
     --success-background: #e8ffd6;
     --modal-fader: rgba(255, 255, 255, 0.2);
-    --shadow-default: rgba(0, 0, 0, 0.15);
+    --shadow-default-color: rgba(0, 0, 0, 0.15);
     --shadow-accent: rgba(0, 0, 0, 0.15);
     --logo-text: #cfd5e8;
     --brand-off-white-yellow: #fbfaf9;

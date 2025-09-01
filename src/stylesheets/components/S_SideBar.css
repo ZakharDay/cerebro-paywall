@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: var(--S_SideBar-width);
-  border-right: 1px solid var(--border-default);
+  border-right: 1px solid var(--border-default-color);
   background: var(--body-bg);
 
   .W_SideBarMenuContent {

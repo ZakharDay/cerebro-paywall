@@ -1,49 +1,31 @@
 .A_MainEntityBarMoreButton {
   cursor: pointer;
-
   position: relative;
-
   display: flex;
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
-  max-width: 36px;
-  /* margin-left: -12px; */
-  border-radius: 18px;
-
   justify-content: center;
   align-items: center;
+  width: var(--A_MainEntityBarMoreButton-size);
+  height: var(--A_MainEntityBarMoreButton-size);
+  min-width: var(--A_MainEntityBarMoreButton-size);
+  max-width: var(--A_MainEntityBarMoreButton-size);
 
   /* v2 EXTRA */
   /* background-color: var(--v2-icon-button-background); */
-
-  transition: all 0.1s ease-in-out;
+  /* transition: all 0.1s ease-in-out; */
 
   &::before {
-    width: var(--Q_Icon-width);
-    min-width: var(--Q_Icon-width);
-    height: var(--Q_Icon-height);
-    font-family: 'tabler-icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
+    content: var(--icon-more);
     display: block;
-    text-align: center;
-    font-size: var(--Q_Icon-font-size);
+    font-family: var(--icon-font);
+    font-size: var(--A_MainEntityBarMoreButton-font-size);
+    line-height: var(--A_MainEntityBarMoreButton-line-height);
     color: var(--icon-default);
-    transition: all 0.3s ease-in-out;
-
-    content: '\ea95';
+    text-align: center;
+    /* transition: all 0.3s ease-in-out; */
+    speak: none;
   }
 
   /* v2 EXTRA */
-
   /* &:hover {
     background-color: var(--v2-icon-button-background-hover);
   } */

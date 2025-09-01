@@ -6,12 +6,12 @@
   gap: var(--O_EntityBar-gap);
   border-radius: 8px;
 
-  border: 1px solid var(--border-default);
+  border: 1px solid var(--border-default-color);
   background: var(--card-bg-default);
-  box-shadow: 0px 4px 4px 0px var(--shadow-default);
+  box-shadow: 0px 4px 4px 0px var(--shadow-default-color);
 
   &.accent {
-    border: 1px solid var(--border-accent);
+    border: 1px solid var(--border-accent-color);
     background: var(--card-bg-accent);
     box-shadow: 0px 4px 4px 0px var(--shadow-accent);
   }

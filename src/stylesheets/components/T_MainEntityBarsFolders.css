@@ -1,14 +1,13 @@
 .T_MainEntityBarsFolders {
-  .W_Client {
-    margin-top: 36px;
-    padding-bottom: 36px;
+  .W_MainEntityBarsFoldersClient {
+    padding: var(--W_MainEntityBarsFoldersClient-padding-vertical) 0;
 
     &:first-child {
-      margin-top: 20px;
+      padding-top: var(--W_MainEntityBarsFoldersClient-first_child-padding-top);
     }
 
     &:not(:last-child) {
-      border-bottom: 1px solid var(--border-default);
+      border-bottom: var(--border-width) solid var(--border-default-color);
     }
 
     & > .O_MainEntityBar:not(.opened) ~ .W_SubClient,
@@ -16,8 +15,8 @@
       display: none;
     }
 
-    .W_SubClient {
-      margin-top: 24px;
+    .W_MainEntityBarsFoldersSubClient {
+      padding-top: var(--W_MainEntityBarsFoldersSubClient-padding-top);
 
       & > .O_MainEntityBar:not(.opened) ~ .C_Entities {
         display: none;
@@ -29,6 +28,6 @@
     display: flex;
     flex-direction: column;
     gap: var(--C_Entities-gap);
-    padding: var(--C_Entities-gap) 0 0;
+    padding-top: var(--C_Entities-padding-top);
   }
 }

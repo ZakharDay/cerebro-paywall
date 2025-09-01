@@ -1,5 +1,7 @@
+/* 🔴 Check */
+
 :root {
-  --W_InternalPageWithSideBarScrollArea-max-width: 1140px;
+  --W_InternalPageWithSideBarScrollArea-max-width: 1280px;
   --W_InternalPageWithSideBarScrollArea-padding-horizontal: 40px;
 }
 
@@ -13,18 +15,5 @@
 @media (max-width: 767px) {
   :root {
     --W_InternalPageWithSideBarScrollArea-padding-horizontal: 16px;
-  }
-}
-
-:root {
-}
-
-@media (min-width: 1024px) and (max-width: 1536px) {
-  :root {
-  }
-}
-
-@media (max-width: 1023px) {
-  :root {
   }
 }

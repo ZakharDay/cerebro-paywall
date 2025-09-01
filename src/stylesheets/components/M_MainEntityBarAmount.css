@@ -2,39 +2,59 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--M_TitleWithDescription-ui_property-gap);
+  gap: var(--M_MainEntityBarAmount-gap);
+  overflow-x: auto;
 
-  /* Context based */
-  &.uiProperty {
-    overflow-x: auto;
+  .A_Text {
+    &:first-child {
+      font-family: var(--font-family);
+      font-size: var(--ui-label-font-size);
+      line-height: var(--ui-label-line-height);
+      font-weight: var(--ui-label-font-weight);
+      color: var(--text-secondary);
+    }
+
+    &:last-child {
+      font-family: var(--font-family);
+      font-size: var(--ui-accent-text-medium-font-size);
+      line-height: var(--ui-accent-text-medium-line-height);
+      font-weight: var(--ui-accent-text-medium-font-weight);
+      color: var(--text-primary);
+    }
+  }
+
+  & > .A_Text {
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .M_MainEntityBarAmount {
+    flex-direction: row-reverse;
+    align-items: baseline;
 
     .A_Text {
-      &:first-child {
-        color: var(--text-secondary);
+      width: fit-content;
+      text-overflow: unset;
 
-        /* font-family: 'PT Root UI';
-        font-size: var(--ui-label-font-size, 12px);
-        font-style: normal;
-        font-weight: 400;
-        line-height: var(--ui-label-line-height, 16px); */
+      &:first-child,
+      &:last-child {
+        font-size: var(--ui-accent-text-medium-font-size);
+        line-height: var(--ui-accent-text-medium-line-height);
+        font-weight: var(--ui-accent-text-medium-font-weight);
+      }
+
+      &:first-child {
+        text-transform: lowercase;
+        color: var(--text-muted);
       }
 
       &:last-child {
         color: var(--text-primary);
-
-        /* font-family: 'PT Root UI';
-        font-size: var(--ui-accent-text-medium-font-size, 16px);
-        font-style: normal;
-        font-weight: 700;
-        line-height: var(--ui-accent-text-medium-line-height, 20px); */
       }
-    }
-
-    & > .A_Text {
-      text-wrap: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      width: 100%;
     }
   }
 }

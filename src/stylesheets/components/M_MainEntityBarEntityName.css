@@ -1,14 +1,12 @@
 .M_MainEntityBarEntityName {
   display: flex;
   align-items: flex-start;
-  gap: var(--v2_M_EntityName-gap);
+  gap: var(--M_MainEntityBarEntityName-gap);
   width: 100%;
-
-  /* ui-accent-text-medium */
-  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-family: var(--font-family);
   font-size: var(--ui-accent-text-medium-font-size);
   line-height: var(--ui-accent-text-medium-line-height);
-  font-weight: 700;
+  font-weight: var(--ui-accent-text-medium-font-weight);
 
   .A_Text {
     cursor: pointer;

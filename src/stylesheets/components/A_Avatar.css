@@ -3,5 +3,5 @@
   min-width: var(--A_Avatar-width);
   height: var(--A_Avatar-height);
   border-radius: var(--A_Avatar-border-radius);
-  background-color: var(--border-default);
+  background-color: var(--border-default-color);
 }

@@ -40,9 +40,10 @@
     width: 100vw;
     padding-top: var(--O_MenuBar-height);
 
+    /* prettier-ignore */
     padding-left: calc(
       var(--S_SideBar-width) +
-        var(--W_InternalPageWithSideBarScrollArea-padding-horizontal)
+      var(--W_InternalPageWithSideBarScrollArea-padding-horizontal)
     );
 
     padding-right: var(

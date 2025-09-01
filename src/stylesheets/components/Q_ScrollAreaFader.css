@@ -4,7 +4,7 @@
   height: var(--Q_ScrollAreaFader-height);
   top: var(--Q_ScrollAreaFader-top);
   left: 0;
-  /* border-right: 1px solid var(--border-default, #e6e5e5); */
+  /* border-right: 1px solid var(--border-default-color, #e6e5e5); */
   background: linear-gradient(
     180deg,
     var(--card-bg-default-transparent) 0%,

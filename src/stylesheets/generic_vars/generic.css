@@ -1,4 +1,6 @@
 :root {
   --border-width: 1px;
   --font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  --icon-font: 'tabler-icons';
+  --card-shadow-params: 0px 4px 4px 0px;
 }

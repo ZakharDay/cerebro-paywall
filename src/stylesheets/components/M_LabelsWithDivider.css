@@ -2,7 +2,8 @@
   display: inline-flex;
   align-items: flex-start;
   gap: var(--M_LabelsWithDivider-gap);
-  width: 100%;
+  font-size: var(--ui-label-font-size);
+  line-height: var(--ui-label-line-height);
   color: var(--text-secondary);
   overflow-x: auto;
 
@@ -10,7 +11,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
-    max-width: 500px;
 
     &:last-child {
       flex: 1 1 0;
