@@ -27,9 +27,9 @@
   --ui-tab-button-text-font-size: 18px;
   --ui-tab-button-text-line-height: 24px;
 
-  --ui-chip-text-font-size: 10px;
-  --ui-chip-text-line-height: 13px;
-  --ui-chip-text-font-weight: 500;
+  --ui-chip-font-size: 10px;
+  --ui-chip-line-height: 13px;
+  --ui-chip-font-weight: 500;
 
   --ui-label-font-size: 12px;
   --ui-label-line-height: 16px;
@@ -43,6 +43,7 @@
   --ui-form-label-line-height: 20px;
   --ui-form-text-font-size: 16px;
   --ui-form-text-line-height: 20px;
+
   --display-heading-3-font-size: 24px;
   --display-heading-3-line-height: 37px;
 }
@@ -68,8 +69,8 @@
     --ui-button-text-default-line-height: 18px;
     --ui-tab-button-text-font-size: 16px;
     --ui-tab-button-text-line-height: 22px;
-    --ui-chip-text-font-size: 10px;
-    --ui-chip-text-line-height: 11px;
+    --ui-chip-font-size: 10px;
+    --ui-chip-line-height: 11px;
     --ui-label-font-size: 10px;
     --ui-label-line-height: 14px;
     --ui-accent-text-medium-font-size: 14px;

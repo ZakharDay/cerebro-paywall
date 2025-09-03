@@ -14,21 +14,30 @@
 @import '../stylesheets/components/A_IconButton-vars.css';
 @import '../stylesheets/components/A_Input-vars.css';
 @import '../stylesheets/components/A_InputButton-vars.css';
+@import '../stylesheets/components/A_MainEntityBarFavButton-vars.css';
+@import '../stylesheets/components/A_MainEntityBarMoreButton-vars.css';
+@import '../stylesheets/components/A_MainEntityBarToggleButton-vars.css';
 @import '../stylesheets/components/A_TabButton-vars.css';
 @import '../stylesheets/components/A_TextArea-vars.css';
 @import '../stylesheets/components/A_ToggleOpenBarButton-vars.css';
+@import '../stylesheets/components/A_Tooltip-vars.css';
 
 @import '../stylesheets/components/M_ButtonSet-vars.css';
 @import '../stylesheets/components/M_CabinetNameWithId-vars.css';
 @import '../stylesheets/components/M_Chips-vars.css';
 @import '../stylesheets/components/M_FormField-vars.css';
+@import '../stylesheets/components/M_InfoMark-vars.css';
 @import '../stylesheets/components/M_LabelsWithDivider-vars.css';
+@import '../stylesheets/components/M_MainEntityBarAmount-vars.css';
+@import '../stylesheets/components/M_MainEntityBarEntityName-vars.css';
+@import '../stylesheets/components/M_MainEntityBarTitle-vars.css';
 @import '../stylesheets/components/M_PayWallWithPromoText-vars.css';
 @import '../stylesheets/components/M_TabBar-vars.css';
 @import '../stylesheets/components/M_TitleWithDescription-vars.css';
 @import '../stylesheets/components/M_TwoRowButtonSet-vars.css';
 
 @import '../stylesheets/components/O_EntityBar-vars.css';
+@import '../stylesheets/components/O_MainEntityBar-vars.css';
 @import '../stylesheets/components/O_MenuBar-vars.css';
 @import '../stylesheets/components/O_PayWallContent-vars.css';
 @import '../stylesheets/components/O_PayWallContentHeader-vars.css';
@@ -40,45 +49,26 @@
 @import '../stylesheets/components/S_PayWallWithPromoModal-vars.css';
 @import '../stylesheets/components/S_SideBar-vars.css';
 
+@import '../stylesheets/components/T_MainEntityBarsFolders-vars.css';
 @import '../stylesheets/components/T_PayWallModal-vars.css';
 
 @import '../stylesheets/components/L_InternalPageWithSideBar-vars.css';
-
-/*  */
-/*  */
-/*  */
-
-@import '../stylesheets/components/A_MainEntityBarFavButton-vars.css';
-@import '../stylesheets/components/A_MainEntityBarMoreButton-vars.css';
-@import '../stylesheets/components/A_MainEntityBarToggleButton-vars.css';
-@import '../stylesheets/components/M_MainEntityBarAmount-vars.css';
-@import '../stylesheets/components/M_MainEntityBarEntityName-vars.css';
-@import '../stylesheets/components/M_MainEntityBarTitle-vars.css';
-@import '../stylesheets/components/O_MainEntityBar-vars.css';
-@import '../stylesheets/components/T_MainEntityBarsFolders-vars.css';
-
-/*  */
-/*  */
-/*  */
-
 /* End Vars */
 
 /* Basics */
-
 @import '../stylesheets/reset.css';
 @import '../stylesheets/fonts.css';
 @import '../stylesheets/basics.css';
-
 /* End Basics */
 
 /* Components */
-
-@import '../stylesheets/components/Q_Logo.css';
 @import '../stylesheets/components/Q_Icon.css';
-@import '../stylesheets/components/Q_ScrollAreaFader.css';
+@import '../stylesheets/components/Q_Logo.css';
 @import '../stylesheets/components/Q_NoticeBarText.css';
+@import '../stylesheets/components/Q_ScrollAreaFader.css';
 
 @import '../stylesheets/components/A_Avatar.css';
+@import '../stylesheets/components/A_Breadcrumb.css';
 @import '../stylesheets/components/A_Button.css';
 @import '../stylesheets/components/A_Chip.css';
 @import '../stylesheets/components/A_FormFieldMessage.css';
@@ -86,27 +76,35 @@
 @import '../stylesheets/components/A_Input.css';
 @import '../stylesheets/components/A_InputButton.css';
 @import '../stylesheets/components/A_Label.css';
+@import '../stylesheets/components/A_MainEntityBarFavButton.css';
+@import '../stylesheets/components/A_MainEntityBarMoreButton.css';
+@import '../stylesheets/components/A_MainEntityBarToggleButton.css';
 @import '../stylesheets/components/A_PromoContentLink.css';
 @import '../stylesheets/components/A_TabButton.css';
 @import '../stylesheets/components/A_TextArea.css';
-@import '../stylesheets/components/A_Breadcrumb.css';
 @import '../stylesheets/components/A_ToggleOpenBarButton.css';
+@import '../stylesheets/components/A_Tooltip.css';
 
+@import '../stylesheets/components/M_Breadcrumbs.css';
 @import '../stylesheets/components/M_ButtonSet.css';
 @import '../stylesheets/components/M_CabinetNameWithId.css';
 @import '../stylesheets/components/M_Chips.css';
 @import '../stylesheets/components/M_FormField.css';
+@import '../stylesheets/components/M_InfoMark.css';
 @import '../stylesheets/components/M_LabelsWithDivider.css';
+@import '../stylesheets/components/M_MainEntityBarAmount.css';
+@import '../stylesheets/components/M_MainEntityBarEntityName.css';
+@import '../stylesheets/components/M_MainEntityBarTitle.css';
 @import '../stylesheets/components/M_PayWallWithPromoText.css';
+@import '../stylesheets/components/M_SideBarMenuItem.css';
 @import '../stylesheets/components/M_TabBar.css';
 @import '../stylesheets/components/M_TitleWithDescription.css';
 @import '../stylesheets/components/M_TransferInput.css';
 @import '../stylesheets/components/M_TwoRowButtonSet.css';
-@import '../stylesheets/components/M_SideBarMenuItem.css';
-@import '../stylesheets/components/M_Breadcrumbs.css';
 
-@import '../stylesheets/components/O_MenuBar.css';
 @import '../stylesheets/components/O_EntityBar.css';
+@import '../stylesheets/components/O_MainEntityBar.css';
+@import '../stylesheets/components/O_MenuBar.css';
 @import '../stylesheets/components/O_PayWallContent.css';
 @import '../stylesheets/components/O_PayWallContentActionBar.css';
 @import '../stylesheets/components/O_PayWallContentHeader.css';
@@ -119,26 +117,8 @@
 @import '../stylesheets/components/S_SideBar.css';
 @import '../stylesheets/components/S_NavigationBar.css';
 
+@import '../stylesheets/components/T_MainEntityBarsFolders.css';
 @import '../stylesheets/components/T_PayWallModal.css';
 
 @import '../stylesheets/components/L_InternalPageWithSideBar.css';
-
-/*  */
-/*  */
-/*  */
-
-@import '../stylesheets/components/A_MainEntityBarMoreButton.css';
-@import '../stylesheets/components/A_MainEntityBarFavButton.css';
-@import '../stylesheets/components/A_MainEntityBarToggleButton.css';
-@import '../stylesheets/components/M_MainEntityBarAmount.css';
-@import '../stylesheets/components/M_InfoMark.css';
-@import '../stylesheets/components/M_MainEntityBarEntityName.css';
-@import '../stylesheets/components/M_MainEntityBarTitle.css';
-@import '../stylesheets/components/O_MainEntityBar.css';
-@import '../stylesheets/components/T_MainEntityBarsFolders.css';
-
-/*  */
-/*  */
-/*  */
-
 /* End Components */

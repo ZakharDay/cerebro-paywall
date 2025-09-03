@@ -19,8 +19,9 @@
     font-family: var(--icon-font);
     font-size: var(--A_MainEntityBarMoreButton-font-size);
     line-height: var(--A_MainEntityBarMoreButton-line-height);
-    color: var(--icon-default);
+    font-weight: normal;
     text-align: center;
+    color: var(--icon-default);
     /* transition: all 0.3s ease-in-out; */
     speak: none;
   }
