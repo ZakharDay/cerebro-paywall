@@ -1,0 +1,24 @@
+:root {
+  --A_Tooltip-padding-horizontal: 8px;
+  --A_Tooltip-padding-vertical: 6px;
+  --A_Tooltip-border-radius: 4px;
+
+  /* prettier-ignore */
+  --A_Tooltip-padding:
+    var(--A_Tooltip-padding-vertical)
+    var(--A_Tooltip-padding-horizontal);
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  :root {
+    --A_Tooltip-padding-horizontal: 6px;
+    --A_Tooltip-padding-vertical: 4px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --A_Tooltip-padding-horizontal: 8px;
+    --A_Tooltip-padding-vertical: 6px;
+  }
+}

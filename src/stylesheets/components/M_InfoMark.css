@@ -19,8 +19,9 @@
     font-family: var(--icon-font);
     font-size: var(--M_InfoMark-font-size);
     line-height: var(--M_InfoMark-line-height);
-    color: var(--icon-default);
+    font-weight: normal;
     text-align: center;
+    color: var(--interactive-initial);
     /* transition: all 0.3s ease-in-out; */
     speak: none;
   }
@@ -28,4 +29,16 @@
   /* &:hover {
     background-color: var(--v2-icon-button-background-hover);
   } */
+
+  &:hover {
+    .A_Tooltip {
+      display: block;
+    }
+  }
+
+  .A_Tooltip {
+    position: absolute;
+    top: calc(var(--M_InfoMark-size) - 2px);
+    display: none;
+  }
 }

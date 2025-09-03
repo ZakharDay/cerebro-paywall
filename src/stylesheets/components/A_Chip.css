@@ -3,9 +3,9 @@
   border-radius: var(--A_Chip-border-radius);
   border: var(--border-width) solid var(--text-muted);
   font-family: var(--font-family);
-  font-size: var(--ui-chip-text-font-size);
-  line-height: var(--ui-chip-text-line-height);
-  font-weight: var(--ui-chip-text-font-weight);
+  font-size: var(--ui-chip-font-size);
+  line-height: var(--ui-chip-line-height);
+  font-weight: var(--ui-chip-font-weight);
   text-align: center;
   text-wrap: nowrap;
   color: var(--text-muted);
