@@ -11,13 +11,11 @@
   .W_MenuBarLeft {
     display: flex;
     gap: 24px;
-    flex: 1 1 auto;
-    /* overflow-x: scroll; */
+    min-width: 0;
   }
 
   .W_MenuBarRight {
     display: flex;
     justify-content: flex-end;
-    flex: 1 1 auto;
   }
 }
